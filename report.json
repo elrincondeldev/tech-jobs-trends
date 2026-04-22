@@ -1,0 +1,5423 @@
+{
+  "meta": {
+    "generated_at": "2026-04-21T21:21:42.138521+00:00",
+    "source_file": "job_offers.json",
+    "total_offers": 5102,
+    "salary_cap_usd": 500000,
+    "params": {
+      "top_skills": 50,
+      "top_countries": 30,
+      "min_role_jobs": 20
+    }
+  },
+  "overview": {
+    "total_offers": 5102,
+    "with_salary": 1603,
+    "with_salary_pct": 31.4,
+    "with_technologies": 4963,
+    "with_technologies_pct": 97.3,
+    "with_role": 5102,
+    "with_role_pct": 100.0,
+    "salary_cap_usd": 500000,
+    "offers_with_valid_salary": 1564
+  },
+  "roles": [
+    {
+      "role": "other",
+      "jobs": 700,
+      "pct": 13.7
+    },
+    {
+      "role": "software engineer",
+      "jobs": 512,
+      "pct": 10.0
+    },
+    {
+      "role": "full stack",
+      "jobs": 447,
+      "pct": 8.8
+    },
+    {
+      "role": "backend",
+      "jobs": 388,
+      "pct": 7.6
+    },
+    {
+      "role": "marketing",
+      "jobs": 339,
+      "pct": 6.6
+    },
+    {
+      "role": "frontend",
+      "jobs": 265,
+      "pct": 5.2
+    },
+    {
+      "role": "sales",
+      "jobs": 243,
+      "pct": 4.8
+    },
+    {
+      "role": "devops",
+      "jobs": 218,
+      "pct": 4.3
+    },
+    {
+      "role": "data engineer",
+      "jobs": 189,
+      "pct": 3.7
+    },
+    {
+      "role": "qa",
+      "jobs": 164,
+      "pct": 3.2
+    },
+    {
+      "role": "designer",
+      "jobs": 153,
+      "pct": 3.0
+    },
+    {
+      "role": "operations",
+      "jobs": 152,
+      "pct": 3.0
+    },
+    {
+      "role": "product manager",
+      "jobs": 117,
+      "pct": 2.3
+    },
+    {
+      "role": "support",
+      "jobs": 115,
+      "pct": 2.3
+    },
+    {
+      "role": "architect",
+      "jobs": 114,
+      "pct": 2.2
+    },
+    {
+      "role": "consultant",
+      "jobs": 107,
+      "pct": 2.1
+    },
+    {
+      "role": "security",
+      "jobs": 107,
+      "pct": 2.1
+    },
+    {
+      "role": "project manager",
+      "jobs": 104,
+      "pct": 2.0
+    },
+    {
+      "role": "machine learning engineer",
+      "jobs": 91,
+      "pct": 1.8
+    },
+    {
+      "role": "ai engineer",
+      "jobs": 88,
+      "pct": 1.7
+    },
+    {
+      "role": "data analyst",
+      "jobs": 86,
+      "pct": 1.7
+    },
+    {
+      "role": "mobile",
+      "jobs": 86,
+      "pct": 1.7
+    },
+    {
+      "role": "data scientist",
+      "jobs": 67,
+      "pct": 1.3
+    },
+    {
+      "role": "tech lead",
+      "jobs": 59,
+      "pct": 1.2
+    },
+    {
+      "role": "engineering manager",
+      "jobs": 51,
+      "pct": 1.0
+    },
+    {
+      "role": "researcher",
+      "jobs": 44,
+      "pct": 0.9
+    },
+    {
+      "role": "customer success",
+      "jobs": 34,
+      "pct": 0.7
+    },
+    {
+      "role": "business analyst",
+      "jobs": 26,
+      "pct": 0.5
+    },
+    {
+      "role": "product owner",
+      "jobs": 22,
+      "pct": 0.4
+    },
+    {
+      "role": "analytics engineer",
+      "jobs": 9,
+      "pct": 0.2
+    },
+    {
+      "role": "technical writer",
+      "jobs": 5,
+      "pct": 0.1
+    }
+  ],
+  "distribution": {
+    "by_level": [
+      {
+        "value": "unknown",
+        "jobs": 4279,
+        "pct": 83.9
+      },
+      {
+        "value": "senior",
+        "jobs": 414,
+        "pct": 8.1
+      },
+      {
+        "value": "mid-level",
+        "jobs": 344,
+        "pct": 6.7
+      },
+      {
+        "value": "junior",
+        "jobs": 38,
+        "pct": 0.7
+      },
+      {
+        "value": "expert",
+        "jobs": 25,
+        "pct": 0.5
+      },
+      {
+        "value": "no_experience",
+        "jobs": 2,
+        "pct": 0.0
+      }
+    ],
+    "by_work_mode": [
+      {
+        "value": "remote",
+        "jobs": 2945,
+        "pct": 57.7
+      },
+      {
+        "value": "on-site",
+        "jobs": 1793,
+        "pct": 35.1
+      },
+      {
+        "value": "hybrid",
+        "jobs": 364,
+        "pct": 7.1
+      }
+    ],
+    "by_country": [
+      {
+        "value": "unknown",
+        "jobs": 3429,
+        "pct": 67.2
+      },
+      {
+        "value": "Chile",
+        "jobs": 506,
+        "pct": 9.9
+      },
+      {
+        "value": "Colombia",
+        "jobs": 338,
+        "pct": 6.6
+      },
+      {
+        "value": "Mexico",
+        "jobs": 197,
+        "pct": 3.9
+      },
+      {
+        "value": "Peru",
+        "jobs": 115,
+        "pct": 2.3
+      },
+      {
+        "value": "Costa Rica",
+        "jobs": 80,
+        "pct": 1.6
+      },
+      {
+        "value": "Brazil",
+        "jobs": 79,
+        "pct": 1.5
+      },
+      {
+        "value": "Argentina",
+        "jobs": 77,
+        "pct": 1.5
+      },
+      {
+        "value": "Spain",
+        "jobs": 57,
+        "pct": 1.1
+      },
+      {
+        "value": "Ecuador",
+        "jobs": 38,
+        "pct": 0.7
+      },
+      {
+        "value": "Bolivia",
+        "jobs": 34,
+        "pct": 0.7
+      },
+      {
+        "value": "Uruguay",
+        "jobs": 30,
+        "pct": 0.6
+      },
+      {
+        "value": "Guatemala",
+        "jobs": 17,
+        "pct": 0.3
+      },
+      {
+        "value": "El Salvador",
+        "jobs": 17,
+        "pct": 0.3
+      },
+      {
+        "value": "Panama",
+        "jobs": 16,
+        "pct": 0.3
+      },
+      {
+        "value": "Paraguay",
+        "jobs": 16,
+        "pct": 0.3
+      },
+      {
+        "value": "Nicaragua",
+        "jobs": 16,
+        "pct": 0.3
+      },
+      {
+        "value": "Honduras",
+        "jobs": 13,
+        "pct": 0.3
+      },
+      {
+        "value": "LATAM",
+        "jobs": 10,
+        "pct": 0.2
+      },
+      {
+        "value": "Global",
+        "jobs": 7,
+        "pct": 0.1
+      },
+      {
+        "value": "Venezuela",
+        "jobs": 6,
+        "pct": 0.1
+      },
+      {
+        "value": "Dominican Republic",
+        "jobs": 3,
+        "pct": 0.1
+      },
+      {
+        "value": "Cuba",
+        "jobs": 1,
+        "pct": 0.0
+      }
+    ],
+    "by_platform": [
+      {
+        "value": "Torre.ai",
+        "jobs": 3639,
+        "pct": 71.3
+      },
+      {
+        "value": "GetOnBoard",
+        "jobs": 727,
+        "pct": 14.2
+      },
+      {
+        "value": "Arbeitnow",
+        "jobs": 606,
+        "pct": 11.9
+      },
+      {
+        "value": "Jobicy",
+        "jobs": 100,
+        "pct": 2.0
+      },
+      {
+        "value": "Remotive",
+        "jobs": 16,
+        "pct": 0.3
+      },
+      {
+        "value": "Himalayas",
+        "jobs": 14,
+        "pct": 0.3
+      }
+    ],
+    "by_category": [
+      {
+        "value": "unknown",
+        "jobs": 4246,
+        "pct": 83.2
+      },
+      {
+        "value": "Programming",
+        "jobs": 346,
+        "pct": 6.8
+      },
+      {
+        "value": "SysAdmin / DevOps / QA",
+        "jobs": 111,
+        "pct": 2.2
+      },
+      {
+        "value": "Data Science / Analytics",
+        "jobs": 101,
+        "pct": 2.0
+      },
+      {
+        "value": "Product, Innovation & Agile",
+        "jobs": 84,
+        "pct": 1.6
+      },
+      {
+        "value": "Design / UX",
+        "jobs": 26,
+        "pct": 0.5
+      },
+      {
+        "value": "Mobile Development",
+        "jobs": 26,
+        "pct": 0.5
+      },
+      {
+        "value": "Technical Support",
+        "jobs": 26,
+        "pct": 0.5
+      },
+      {
+        "value": "Customer Success",
+        "jobs": 22,
+        "pct": 0.4
+      },
+      {
+        "value": "Cybersecurity",
+        "jobs": 21,
+        "pct": 0.4
+      },
+      {
+        "value": "Data Science & Analytics",
+        "jobs": 14,
+        "pct": 0.3
+      },
+      {
+        "value": "Software Engineering",
+        "jobs": 11,
+        "pct": 0.2
+      },
+      {
+        "value": "Software Development",
+        "jobs": 9,
+        "pct": 0.2
+      },
+      {
+        "value": "Product & Operations",
+        "jobs": 8,
+        "pct": 0.2
+      },
+      {
+        "value": "Sales",
+        "jobs": 8,
+        "pct": 0.2
+      },
+      {
+        "value": "Business Development",
+        "jobs": 5,
+        "pct": 0.1
+      },
+      {
+        "value": "DevOps & Infrastructure",
+        "jobs": 5,
+        "pct": 0.1
+      },
+      {
+        "value": "All others",
+        "jobs": 2,
+        "pct": 0.0
+      },
+      {
+        "value": "Writing",
+        "jobs": 2,
+        "pct": 0.0
+      },
+      {
+        "value": "Customer Service",
+        "jobs": 2,
+        "pct": 0.0
+      }
+    ],
+    "by_contract": [
+      {
+        "value": "full-time",
+        "jobs": 4605,
+        "pct": 90.3
+      },
+      {
+        "value": "unknown",
+        "jobs": 424,
+        "pct": 8.3
+      },
+      {
+        "value": "freelance",
+        "jobs": 51,
+        "pct": 1.0
+      },
+      {
+        "value": "part-time",
+        "jobs": 19,
+        "pct": 0.4
+      },
+      {
+        "value": "practica_internship",
+        "jobs": 3,
+        "pct": 0.1
+      }
+    ]
+  },
+  "skills": {
+    "top_overall": [
+      {
+        "rank": 1,
+        "skill": "Python",
+        "category": "Language",
+        "jobs": 1249,
+        "pct": 24.5
+      },
+      {
+        "rank": 2,
+        "skill": "AWS",
+        "category": "Cloud",
+        "jobs": 847,
+        "pct": 16.6
+      },
+      {
+        "rank": 3,
+        "skill": "SQL",
+        "category": "Database",
+        "jobs": 769,
+        "pct": 15.1
+      },
+      {
+        "rank": 4,
+        "skill": "Docker",
+        "category": "Container",
+        "jobs": 610,
+        "pct": 12.0
+      },
+      {
+        "rank": 5,
+        "skill": "JavaScript",
+        "category": "Language",
+        "jobs": 535,
+        "pct": 10.5
+      },
+      {
+        "rank": 6,
+        "skill": "CI/CD",
+        "category": "DevOps/CI-CD",
+        "jobs": 517,
+        "pct": 10.1
+      },
+      {
+        "rank": 7,
+        "skill": "Git",
+        "category": "Developer Tool",
+        "jobs": 517,
+        "pct": 10.1
+      },
+      {
+        "rank": 8,
+        "skill": "React.js",
+        "category": "Framework",
+        "jobs": 515,
+        "pct": 10.1
+      },
+      {
+        "rank": 9,
+        "skill": "PostgreSQL",
+        "category": "Database",
+        "jobs": 508,
+        "pct": 10.0
+      },
+      {
+        "rank": 10,
+        "skill": "Software engineering",
+        "category": "Other",
+        "jobs": 441,
+        "pct": 8.6
+      },
+      {
+        "rank": 11,
+        "skill": "TypeScript",
+        "category": "Language",
+        "jobs": 436,
+        "pct": 8.5
+      },
+      {
+        "rank": 12,
+        "skill": "Go",
+        "category": "Language",
+        "jobs": 389,
+        "pct": 7.6
+      },
+      {
+        "rank": 13,
+        "skill": "Java",
+        "category": "Language",
+        "jobs": 343,
+        "pct": 6.7
+      },
+      {
+        "rank": 14,
+        "skill": "Kubernetes",
+        "category": "Container",
+        "jobs": 311,
+        "pct": 6.1
+      },
+      {
+        "rank": 15,
+        "skill": "Jenkins",
+        "category": "DevOps/CI-CD",
+        "jobs": 275,
+        "pct": 5.4
+      },
+      {
+        "rank": 16,
+        "skill": "DevOps",
+        "category": "DevOps/CI-CD",
+        "jobs": 273,
+        "pct": 5.4
+      },
+      {
+        "rank": 17,
+        "skill": "Redis",
+        "category": "Database",
+        "jobs": 271,
+        "pct": 5.3
+      },
+      {
+        "rank": 18,
+        "skill": "Node.js",
+        "category": "Framework",
+        "jobs": 267,
+        "pct": 5.2
+      },
+      {
+        "rank": 19,
+        "skill": "MongoDB",
+        "category": "Database",
+        "jobs": 257,
+        "pct": 5.0
+      },
+      {
+        "rank": 20,
+        "skill": "REST API",
+        "category": "Protocol/API",
+        "jobs": 243,
+        "pct": 4.8
+      },
+      {
+        "rank": 21,
+        "skill": "Microsoft Azure",
+        "category": "Cloud",
+        "jobs": 242,
+        "pct": 4.7
+      },
+      {
+        "rank": 22,
+        "skill": "Terraform",
+        "category": "DevOps/CI-CD",
+        "jobs": 239,
+        "pct": 4.7
+      },
+      {
+        "rank": 23,
+        "skill": "Data analysis",
+        "category": "Other",
+        "jobs": 238,
+        "pct": 4.7
+      },
+      {
+        "rank": 24,
+        "skill": "Django",
+        "category": "Framework",
+        "jobs": 235,
+        "pct": 4.6
+      },
+      {
+        "rank": 25,
+        "skill": "Angular",
+        "category": "Framework",
+        "jobs": 230,
+        "pct": 4.5
+      },
+      {
+        "rank": 26,
+        "skill": "Scrum",
+        "category": "Methodology",
+        "jobs": 220,
+        "pct": 4.3
+      },
+      {
+        "rank": 27,
+        "skill": "REST",
+        "category": "Protocol/API",
+        "jobs": 211,
+        "pct": 4.1
+      },
+      {
+        "rank": 28,
+        "skill": "Software development",
+        "category": "Other",
+        "jobs": 209,
+        "pct": 4.1
+      },
+      {
+        "rank": 29,
+        "skill": "Project management",
+        "category": "Other",
+        "jobs": 199,
+        "pct": 3.9
+      },
+      {
+        "rank": 30,
+        "skill": "Flask",
+        "category": "Framework",
+        "jobs": 198,
+        "pct": 3.9
+      },
+      {
+        "rank": 31,
+        "skill": "React",
+        "category": "Framework",
+        "jobs": 188,
+        "pct": 3.7
+      },
+      {
+        "rank": 32,
+        "skill": "HTML",
+        "category": "Protocol/API",
+        "jobs": 187,
+        "pct": 3.7
+      },
+      {
+        "rank": 33,
+        "skill": "Microservices",
+        "category": "Architecture",
+        "jobs": 186,
+        "pct": 3.6
+      },
+      {
+        "rank": 34,
+        "skill": "CSS",
+        "category": "Protocol/API",
+        "jobs": 184,
+        "pct": 3.6
+      },
+      {
+        "rank": 35,
+        "skill": "Machine learning",
+        "category": "AI/ML Concept",
+        "jobs": 183,
+        "pct": 3.6
+      },
+      {
+        "rank": 36,
+        "skill": "Figma",
+        "category": "Developer Tool",
+        "jobs": 182,
+        "pct": 3.6
+      },
+      {
+        "rank": 37,
+        "skill": "Jira",
+        "category": "Developer Tool",
+        "jobs": 179,
+        "pct": 3.5
+      },
+      {
+        "rank": 38,
+        "skill": "SQLAlchemy",
+        "category": "Framework",
+        "jobs": 178,
+        "pct": 3.5
+      },
+      {
+        "rank": 39,
+        "skill": "MySQL",
+        "category": "Database",
+        "jobs": 176,
+        "pct": 3.4
+      },
+      {
+        "rank": 40,
+        "skill": "Azure",
+        "category": "Cloud",
+        "jobs": 175,
+        "pct": 3.4
+      },
+      {
+        "rank": 41,
+        "skill": "Google Analytics",
+        "category": "Analytics",
+        "jobs": 175,
+        "pct": 3.4
+      },
+      {
+        "rank": 42,
+        "skill": "Agile methodologies",
+        "category": "Methodology",
+        "jobs": 174,
+        "pct": 3.4
+      },
+      {
+        "rank": 43,
+        "skill": "Analytics",
+        "category": "Other",
+        "jobs": 173,
+        "pct": 3.4
+      },
+      {
+        "rank": 44,
+        "skill": "Knockout.js",
+        "category": "Framework",
+        "jobs": 173,
+        "pct": 3.4
+      },
+      {
+        "rank": 45,
+        "skill": "Google Ads",
+        "category": "Marketing",
+        "jobs": 172,
+        "pct": 3.4
+      },
+      {
+        "rank": 46,
+        "skill": "Artificial intelligence (AI)",
+        "category": "AI/ML Concept",
+        "jobs": 168,
+        "pct": 3.3
+      },
+      {
+        "rank": 47,
+        "skill": "Tableau",
+        "category": "Developer Tool",
+        "jobs": 167,
+        "pct": 3.3
+      },
+      {
+        "rank": 48,
+        "skill": "Full-stack development",
+        "category": "Other",
+        "jobs": 158,
+        "pct": 3.1
+      },
+      {
+        "rank": 49,
+        "skill": "Salesforce",
+        "category": "CMS/SaaS",
+        "jobs": 151,
+        "pct": 3.0
+      },
+      {
+        "rank": 50,
+        "skill": "GitHub",
+        "category": "Developer Tool",
+        "jobs": 147,
+        "pct": 2.9
+      }
+    ],
+    "by_role": {
+      "data engineer": {
+        "total_jobs": 189,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 131,
+            "pct": 69.3
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 106,
+            "pct": 56.1
+          },
+          {
+            "rank": 3,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 56,
+            "pct": 29.6
+          },
+          {
+            "rank": 4,
+            "skill": "Data engineering",
+            "category": "Other",
+            "jobs": 56,
+            "pct": 29.6
+          },
+          {
+            "rank": 5,
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "jobs": 55,
+            "pct": 29.1
+          },
+          {
+            "rank": 6,
+            "skill": "Data governance",
+            "category": "Other",
+            "jobs": 52,
+            "pct": 27.5
+          },
+          {
+            "rank": 7,
+            "skill": "Git",
+            "category": "Developer Tool",
+            "jobs": 50,
+            "pct": 26.5
+          },
+          {
+            "rank": 8,
+            "skill": "Redshift",
+            "category": "Database",
+            "jobs": 48,
+            "pct": 25.4
+          },
+          {
+            "rank": 9,
+            "skill": "MySQL",
+            "category": "Database",
+            "jobs": 47,
+            "pct": 24.9
+          },
+          {
+            "rank": 10,
+            "skill": "Business intelligence (BI)",
+            "category": "Other",
+            "jobs": 44,
+            "pct": 23.3
+          }
+        ]
+      },
+      "architect": {
+        "total_jobs": 114,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 33,
+            "pct": 28.9
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 24,
+            "pct": 21.1
+          },
+          {
+            "rank": 3,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 21,
+            "pct": 18.4
+          },
+          {
+            "rank": 4,
+            "skill": "DevOps",
+            "category": "DevOps/CI-CD",
+            "jobs": 20,
+            "pct": 17.5
+          },
+          {
+            "rank": 5,
+            "skill": "Microsoft Azure",
+            "category": "Cloud",
+            "jobs": 17,
+            "pct": 14.9
+          },
+          {
+            "rank": 6,
+            "skill": "Java",
+            "category": "Language",
+            "jobs": 16,
+            "pct": 14.0
+          },
+          {
+            "rank": 7,
+            "skill": "Kubernetes",
+            "category": "Container",
+            "jobs": 16,
+            "pct": 14.0
+          },
+          {
+            "rank": 8,
+            "skill": "Microservices",
+            "category": "Architecture",
+            "jobs": 15,
+            "pct": 13.2
+          },
+          {
+            "rank": 9,
+            "skill": "Docker",
+            "category": "Container",
+            "jobs": 15,
+            "pct": 13.2
+          },
+          {
+            "rank": 10,
+            "skill": "Azure",
+            "category": "Cloud",
+            "jobs": 13,
+            "pct": 11.4
+          }
+        ]
+      },
+      "tech lead": {
+        "total_jobs": 59,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 22,
+            "pct": 37.3
+          },
+          {
+            "rank": 2,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 21,
+            "pct": 35.6
+          },
+          {
+            "rank": 3,
+            "skill": "Node.js",
+            "category": "Framework",
+            "jobs": 15,
+            "pct": 25.4
+          },
+          {
+            "rank": 4,
+            "skill": "DevOps",
+            "category": "DevOps/CI-CD",
+            "jobs": 13,
+            "pct": 22.0
+          },
+          {
+            "rank": 5,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 13,
+            "pct": 22.0
+          },
+          {
+            "rank": 6,
+            "skill": "Scrum",
+            "category": "Methodology",
+            "jobs": 13,
+            "pct": 22.0
+          },
+          {
+            "rank": 7,
+            "skill": "Docker",
+            "category": "Container",
+            "jobs": 12,
+            "pct": 20.3
+          },
+          {
+            "rank": 8,
+            "skill": "React",
+            "category": "Framework",
+            "jobs": 11,
+            "pct": 18.6
+          },
+          {
+            "rank": 9,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 11,
+            "pct": 18.6
+          },
+          {
+            "rank": 10,
+            "skill": "TypeScript",
+            "category": "Language",
+            "jobs": 10,
+            "pct": 16.9
+          }
+        ]
+      },
+      "full stack": {
+        "total_jobs": 447,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "React.js",
+            "category": "Framework",
+            "jobs": 274,
+            "pct": 61.3
+          },
+          {
+            "rank": 2,
+            "skill": "Docker",
+            "category": "Container",
+            "jobs": 260,
+            "pct": 58.2
+          },
+          {
+            "rank": 3,
+            "skill": "JavaScript",
+            "category": "Language",
+            "jobs": 253,
+            "pct": 56.6
+          },
+          {
+            "rank": 4,
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "jobs": 253,
+            "pct": 56.6
+          },
+          {
+            "rank": 5,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 250,
+            "pct": 55.9
+          },
+          {
+            "rank": 6,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 247,
+            "pct": 55.3
+          },
+          {
+            "rank": 7,
+            "skill": "Git",
+            "category": "Developer Tool",
+            "jobs": 228,
+            "pct": 51.0
+          },
+          {
+            "rank": 8,
+            "skill": "MongoDB",
+            "category": "Database",
+            "jobs": 198,
+            "pct": 44.3
+          },
+          {
+            "rank": 9,
+            "skill": "Redis",
+            "category": "Database",
+            "jobs": 196,
+            "pct": 43.8
+          },
+          {
+            "rank": 10,
+            "skill": "Django",
+            "category": "Framework",
+            "jobs": 190,
+            "pct": 42.5
+          }
+        ]
+      },
+      "frontend": {
+        "total_jobs": 265,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "JavaScript",
+            "category": "Language",
+            "jobs": 128,
+            "pct": 48.3
+          },
+          {
+            "rank": 2,
+            "skill": "React.js",
+            "category": "Framework",
+            "jobs": 126,
+            "pct": 47.5
+          },
+          {
+            "rank": 3,
+            "skill": "TypeScript",
+            "category": "Language",
+            "jobs": 118,
+            "pct": 44.5
+          },
+          {
+            "rank": 4,
+            "skill": "CSS",
+            "category": "Protocol/API",
+            "jobs": 90,
+            "pct": 34.0
+          },
+          {
+            "rank": 5,
+            "skill": "HTML",
+            "category": "Protocol/API",
+            "jobs": 78,
+            "pct": 29.4
+          },
+          {
+            "rank": 6,
+            "skill": "Vue.js",
+            "category": "Framework",
+            "jobs": 65,
+            "pct": 24.5
+          },
+          {
+            "rank": 7,
+            "skill": "REST API",
+            "category": "Protocol/API",
+            "jobs": 61,
+            "pct": 23.0
+          },
+          {
+            "rank": 8,
+            "skill": "React",
+            "category": "Framework",
+            "jobs": 47,
+            "pct": 17.7
+          },
+          {
+            "rank": 9,
+            "skill": "Playwright",
+            "category": "Other",
+            "jobs": 42,
+            "pct": 15.8
+          },
+          {
+            "rank": 10,
+            "skill": "Angular",
+            "category": "Framework",
+            "jobs": 42,
+            "pct": 15.8
+          }
+        ]
+      },
+      "machine learning engineer": {
+        "total_jobs": 91,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 68,
+            "pct": 74.7
+          },
+          {
+            "rank": 2,
+            "skill": "PyTorch",
+            "category": "AI/ML Framework",
+            "jobs": 49,
+            "pct": 53.8
+          },
+          {
+            "rank": 3,
+            "skill": "Machine learning",
+            "category": "AI/ML Concept",
+            "jobs": 49,
+            "pct": 53.8
+          },
+          {
+            "rank": 4,
+            "skill": "TensorFlow",
+            "category": "AI/ML Framework",
+            "jobs": 28,
+            "pct": 30.8
+          },
+          {
+            "rank": 5,
+            "skill": "C++",
+            "category": "Language",
+            "jobs": 20,
+            "pct": 22.0
+          },
+          {
+            "rank": 6,
+            "skill": "Large language model (LLM)",
+            "category": "Other",
+            "jobs": 19,
+            "pct": 20.9
+          },
+          {
+            "rank": 7,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 18,
+            "pct": 19.8
+          },
+          {
+            "rank": 8,
+            "skill": "Docker",
+            "category": "Container",
+            "jobs": 16,
+            "pct": 17.6
+          },
+          {
+            "rank": 9,
+            "skill": "Natural language processing (NLP)",
+            "category": "Other",
+            "jobs": 16,
+            "pct": 17.6
+          },
+          {
+            "rank": 10,
+            "skill": "Deep learning",
+            "category": "AI/ML Concept",
+            "jobs": 16,
+            "pct": 17.6
+          }
+        ]
+      },
+      "ai engineer": {
+        "total_jobs": 88,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 53,
+            "pct": 60.2
+          },
+          {
+            "rank": 2,
+            "skill": "Large language model (LLM)",
+            "category": "Other",
+            "jobs": 22,
+            "pct": 25.0
+          },
+          {
+            "rank": 3,
+            "skill": "Machine learning",
+            "category": "AI/ML Concept",
+            "jobs": 22,
+            "pct": 25.0
+          },
+          {
+            "rank": 4,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 21,
+            "pct": 23.9
+          },
+          {
+            "rank": 5,
+            "skill": "Generative artificial intelligence (Generative AI)",
+            "category": "Other",
+            "jobs": 20,
+            "pct": 22.7
+          },
+          {
+            "rank": 6,
+            "skill": "LangChain",
+            "category": "AI/ML Framework",
+            "jobs": 19,
+            "pct": 21.6
+          },
+          {
+            "rank": 7,
+            "skill": "LLM",
+            "category": "Other",
+            "jobs": 18,
+            "pct": 20.5
+          },
+          {
+            "rank": 8,
+            "skill": "Artificial intelligence (AI)",
+            "category": "AI/ML Concept",
+            "jobs": 18,
+            "pct": 20.5
+          },
+          {
+            "rank": 9,
+            "skill": "Prompt engineering",
+            "category": "Other",
+            "jobs": 13,
+            "pct": 14.8
+          },
+          {
+            "rank": 10,
+            "skill": "OpenAI",
+            "category": "Other",
+            "jobs": 12,
+            "pct": 13.6
+          }
+        ]
+      },
+      "backend": {
+        "total_jobs": 388,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 193,
+            "pct": 49.7
+          },
+          {
+            "rank": 2,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 136,
+            "pct": 35.1
+          },
+          {
+            "rank": 3,
+            "skill": "Java",
+            "category": "Language",
+            "jobs": 133,
+            "pct": 34.3
+          },
+          {
+            "rank": 4,
+            "skill": "Docker",
+            "category": "Container",
+            "jobs": 118,
+            "pct": 30.4
+          },
+          {
+            "rank": 5,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 105,
+            "pct": 27.1
+          },
+          {
+            "rank": 6,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 95,
+            "pct": 24.5
+          },
+          {
+            "rank": 7,
+            "skill": "Microservices",
+            "category": "Architecture",
+            "jobs": 92,
+            "pct": 23.7
+          },
+          {
+            "rank": 8,
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "jobs": 86,
+            "pct": 22.2
+          },
+          {
+            "rank": 9,
+            "skill": "Go",
+            "category": "Language",
+            "jobs": 82,
+            "pct": 21.1
+          },
+          {
+            "rank": 10,
+            "skill": "Node.js",
+            "category": "Framework",
+            "jobs": 81,
+            "pct": 20.9
+          }
+        ]
+      },
+      "software engineer": {
+        "total_jobs": 512,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Continuous integration",
+            "category": "DevOps/CI-CD",
+            "jobs": 96,
+            "pct": 18.8
+          },
+          {
+            "rank": 2,
+            "skill": "Continuous delivery",
+            "category": "DevOps/CI-CD",
+            "jobs": 94,
+            "pct": 18.4
+          },
+          {
+            "rank": 3,
+            "skill": "Angular",
+            "category": "Framework",
+            "jobs": 93,
+            "pct": 18.2
+          },
+          {
+            "rank": 4,
+            "skill": "GitHub",
+            "category": "Developer Tool",
+            "jobs": 92,
+            "pct": 18.0
+          },
+          {
+            "rank": 5,
+            "skill": "Go",
+            "category": "Language",
+            "jobs": 89,
+            "pct": 17.4
+          },
+          {
+            "rank": 6,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 80,
+            "pct": 15.6
+          },
+          {
+            "rank": 7,
+            "skill": "Software development",
+            "category": "Other",
+            "jobs": 66,
+            "pct": 12.9
+          },
+          {
+            "rank": 8,
+            "skill": "C++",
+            "category": "Language",
+            "jobs": 51,
+            "pct": 10.0
+          },
+          {
+            "rank": 9,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 36,
+            "pct": 7.0
+          },
+          {
+            "rank": 10,
+            "skill": "Software engineering",
+            "category": "Other",
+            "jobs": 34,
+            "pct": 6.6
+          }
+        ]
+      },
+      "project manager": {
+        "total_jobs": 104,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Project management",
+            "category": "Other",
+            "jobs": 51,
+            "pct": 49.0
+          },
+          {
+            "rank": 2,
+            "skill": "Jira",
+            "category": "Developer Tool",
+            "jobs": 33,
+            "pct": 31.7
+          },
+          {
+            "rank": 3,
+            "skill": "Scrum",
+            "category": "Methodology",
+            "jobs": 20,
+            "pct": 19.2
+          },
+          {
+            "rank": 4,
+            "skill": "Confluence",
+            "category": "Other",
+            "jobs": 16,
+            "pct": 15.4
+          },
+          {
+            "rank": 5,
+            "skill": "Agile methodologies",
+            "category": "Methodology",
+            "jobs": 15,
+            "pct": 14.4
+          },
+          {
+            "rank": 6,
+            "skill": "Project Management",
+            "category": "Other",
+            "jobs": 13,
+            "pct": 12.5
+          },
+          {
+            "rank": 7,
+            "skill": "Risk management",
+            "category": "Other",
+            "jobs": 10,
+            "pct": 9.6
+          },
+          {
+            "rank": 8,
+            "skill": "Stakeholder management",
+            "category": "Other",
+            "jobs": 9,
+            "pct": 8.7
+          },
+          {
+            "rank": 9,
+            "skill": "Agile Methodologies",
+            "category": "Other",
+            "jobs": 8,
+            "pct": 7.7
+          },
+          {
+            "rank": 10,
+            "skill": "Kanban",
+            "category": "Methodology",
+            "jobs": 8,
+            "pct": 7.7
+          }
+        ]
+      },
+      "devops": {
+        "total_jobs": 218,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Terraform",
+            "category": "DevOps/CI-CD",
+            "jobs": 109,
+            "pct": 50.0
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 104,
+            "pct": 47.7
+          },
+          {
+            "rank": 3,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 93,
+            "pct": 42.7
+          },
+          {
+            "rank": 4,
+            "skill": "Docker",
+            "category": "Container",
+            "jobs": 91,
+            "pct": 41.7
+          },
+          {
+            "rank": 5,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 88,
+            "pct": 40.4
+          },
+          {
+            "rank": 6,
+            "skill": "Kubernetes",
+            "category": "Container",
+            "jobs": 87,
+            "pct": 39.9
+          },
+          {
+            "rank": 7,
+            "skill": "DevOps",
+            "category": "DevOps/CI-CD",
+            "jobs": 78,
+            "pct": 35.8
+          },
+          {
+            "rank": 8,
+            "skill": "Prometheus",
+            "category": "DevOps/CI-CD",
+            "jobs": 63,
+            "pct": 28.9
+          },
+          {
+            "rank": 9,
+            "skill": "Grafana",
+            "category": "Developer Tool",
+            "jobs": 57,
+            "pct": 26.1
+          },
+          {
+            "rank": 10,
+            "skill": "Linux",
+            "category": "Operating System",
+            "jobs": 42,
+            "pct": 19.3
+          }
+        ]
+      },
+      "consultant": {
+        "total_jobs": 107,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Consulting",
+            "category": "Other",
+            "jobs": 21,
+            "pct": 19.6
+          },
+          {
+            "rank": 2,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 13,
+            "pct": 12.1
+          },
+          {
+            "rank": 3,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 13,
+            "pct": 12.1
+          },
+          {
+            "rank": 4,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 12,
+            "pct": 11.2
+          },
+          {
+            "rank": 5,
+            "skill": "SAP S/4HANA",
+            "category": "Other",
+            "jobs": 11,
+            "pct": 10.3
+          },
+          {
+            "rank": 6,
+            "skill": "Documentation",
+            "category": "Other",
+            "jobs": 10,
+            "pct": 9.3
+          },
+          {
+            "rank": 7,
+            "skill": "Project management",
+            "category": "Other",
+            "jobs": 10,
+            "pct": 9.3
+          },
+          {
+            "rank": 8,
+            "skill": "Engineering",
+            "category": "Other",
+            "jobs": 10,
+            "pct": 9.3
+          },
+          {
+            "rank": 9,
+            "skill": "Testing",
+            "category": "Other",
+            "jobs": 8,
+            "pct": 7.5
+          },
+          {
+            "rank": 10,
+            "skill": "Salesforce",
+            "category": "CMS/SaaS",
+            "jobs": 8,
+            "pct": 7.5
+          }
+        ]
+      },
+      "data scientist": {
+        "total_jobs": 67,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 55,
+            "pct": 82.1
+          },
+          {
+            "rank": 2,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 41,
+            "pct": 61.2
+          },
+          {
+            "rank": 3,
+            "skill": "Machine learning",
+            "category": "AI/ML Concept",
+            "jobs": 25,
+            "pct": 37.3
+          },
+          {
+            "rank": 4,
+            "skill": "Data science",
+            "category": "Other",
+            "jobs": 25,
+            "pct": 37.3
+          },
+          {
+            "rank": 5,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 17,
+            "pct": 25.4
+          },
+          {
+            "rank": 6,
+            "skill": "Machine Learning",
+            "category": "Other",
+            "jobs": 15,
+            "pct": 22.4
+          },
+          {
+            "rank": 7,
+            "skill": "Pandas",
+            "category": "Framework",
+            "jobs": 11,
+            "pct": 16.4
+          },
+          {
+            "rank": 8,
+            "skill": "Tableau",
+            "category": "Developer Tool",
+            "jobs": 11,
+            "pct": 16.4
+          },
+          {
+            "rank": 9,
+            "skill": "R",
+            "category": "Language",
+            "jobs": 11,
+            "pct": 16.4
+          },
+          {
+            "rank": 10,
+            "skill": "scikit-learn",
+            "category": "AI/ML Framework",
+            "jobs": 11,
+            "pct": 16.4
+          }
+        ]
+      },
+      "researcher": {
+        "total_jobs": 44,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Focus groups",
+            "category": "Other",
+            "jobs": 8,
+            "pct": 18.2
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 4,
+            "pct": 9.1
+          },
+          {
+            "rank": 3,
+            "skill": "Project Management",
+            "category": "Other",
+            "jobs": 3,
+            "pct": 6.8
+          },
+          {
+            "rank": 4,
+            "skill": "Internet connection",
+            "category": "Other",
+            "jobs": 3,
+            "pct": 6.8
+          },
+          {
+            "rank": 5,
+            "skill": "Software Engineering",
+            "category": "Other",
+            "jobs": 2,
+            "pct": 4.5
+          },
+          {
+            "rank": 6,
+            "skill": "Cloud Computing",
+            "category": "Other",
+            "jobs": 2,
+            "pct": 4.5
+          },
+          {
+            "rank": 7,
+            "skill": "Software Development",
+            "category": "Other",
+            "jobs": 2,
+            "pct": 4.5
+          },
+          {
+            "rank": 8,
+            "skill": "Teaching",
+            "category": "Other",
+            "jobs": 2,
+            "pct": 4.5
+          },
+          {
+            "rank": 9,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 2,
+            "pct": 4.5
+          },
+          {
+            "rank": 10,
+            "skill": "Distributed systems",
+            "category": "Other",
+            "jobs": 2,
+            "pct": 4.5
+          }
+        ]
+      },
+      "support": {
+        "total_jobs": 115,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Troubleshooting",
+            "category": "Other",
+            "jobs": 26,
+            "pct": 22.6
+          },
+          {
+            "rank": 2,
+            "skill": "Technical support",
+            "category": "Other",
+            "jobs": 19,
+            "pct": 16.5
+          },
+          {
+            "rank": 3,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 18,
+            "pct": 15.7
+          },
+          {
+            "rank": 4,
+            "skill": "Incident Management",
+            "category": "Other",
+            "jobs": 13,
+            "pct": 11.3
+          },
+          {
+            "rank": 5,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 12,
+            "pct": 10.4
+          },
+          {
+            "rank": 6,
+            "skill": "Networking",
+            "category": "Other",
+            "jobs": 12,
+            "pct": 10.4
+          },
+          {
+            "rank": 7,
+            "skill": "Windows",
+            "category": "Other",
+            "jobs": 12,
+            "pct": 10.4
+          },
+          {
+            "rank": 8,
+            "skill": "Microsoft Azure",
+            "category": "Cloud",
+            "jobs": 11,
+            "pct": 9.6
+          },
+          {
+            "rank": 9,
+            "skill": "Documentation",
+            "category": "Other",
+            "jobs": 10,
+            "pct": 8.7
+          },
+          {
+            "rank": 10,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 10,
+            "pct": 8.7
+          }
+        ]
+      },
+      "data analyst": {
+        "total_jobs": 86,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 62,
+            "pct": 72.1
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 44,
+            "pct": 51.2
+          },
+          {
+            "rank": 3,
+            "skill": "Tableau",
+            "category": "Developer Tool",
+            "jobs": 33,
+            "pct": 38.4
+          },
+          {
+            "rank": 4,
+            "skill": "Power BI",
+            "category": "Other",
+            "jobs": 22,
+            "pct": 25.6
+          },
+          {
+            "rank": 5,
+            "skill": "Data analysis",
+            "category": "Other",
+            "jobs": 22,
+            "pct": 25.6
+          },
+          {
+            "rank": 6,
+            "skill": "Microsoft Power BI",
+            "category": "Other",
+            "jobs": 21,
+            "pct": 24.4
+          },
+          {
+            "rank": 7,
+            "skill": "Microsoft Excel",
+            "category": "Other",
+            "jobs": 18,
+            "pct": 20.9
+          },
+          {
+            "rank": 8,
+            "skill": "Looker",
+            "category": "Data Platform",
+            "jobs": 12,
+            "pct": 14.0
+          },
+          {
+            "rank": 9,
+            "skill": "Business intelligence (BI)",
+            "category": "Other",
+            "jobs": 11,
+            "pct": 12.8
+          },
+          {
+            "rank": 10,
+            "skill": "Data modeling",
+            "category": "Other",
+            "jobs": 11,
+            "pct": 12.8
+          }
+        ]
+      },
+      "qa": {
+        "total_jobs": 164,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Selenium",
+            "category": "Other",
+            "jobs": 44,
+            "pct": 26.8
+          },
+          {
+            "rank": 2,
+            "skill": "Quality assurance (QA)",
+            "category": "Other",
+            "jobs": 41,
+            "pct": 25.0
+          },
+          {
+            "rank": 3,
+            "skill": "Playwright",
+            "category": "Other",
+            "jobs": 40,
+            "pct": 24.4
+          },
+          {
+            "rank": 4,
+            "skill": "Scrum",
+            "category": "Methodology",
+            "jobs": 40,
+            "pct": 24.4
+          },
+          {
+            "rank": 5,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 36,
+            "pct": 22.0
+          },
+          {
+            "rank": 6,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 36,
+            "pct": 22.0
+          },
+          {
+            "rank": 7,
+            "skill": "Test Automation",
+            "category": "Other",
+            "jobs": 34,
+            "pct": 20.7
+          },
+          {
+            "rank": 8,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 33,
+            "pct": 20.1
+          },
+          {
+            "rank": 9,
+            "skill": "Cypress",
+            "category": "Other",
+            "jobs": 32,
+            "pct": 19.5
+          },
+          {
+            "rank": 10,
+            "skill": "Jira",
+            "category": "Developer Tool",
+            "jobs": 31,
+            "pct": 18.9
+          }
+        ]
+      },
+      "business analyst": {
+        "total_jobs": 26,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 13,
+            "pct": 50.0
+          },
+          {
+            "rank": 2,
+            "skill": "Business Analysis",
+            "category": "Other",
+            "jobs": 7,
+            "pct": 26.9
+          },
+          {
+            "rank": 3,
+            "skill": "Agile Methodologies",
+            "category": "Other",
+            "jobs": 6,
+            "pct": 23.1
+          },
+          {
+            "rank": 4,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 6,
+            "pct": 23.1
+          },
+          {
+            "rank": 5,
+            "skill": "Scrum",
+            "category": "Methodology",
+            "jobs": 6,
+            "pct": 23.1
+          },
+          {
+            "rank": 6,
+            "skill": "Jira",
+            "category": "Developer Tool",
+            "jobs": 5,
+            "pct": 19.2
+          },
+          {
+            "rank": 7,
+            "skill": "Tableau",
+            "category": "Developer Tool",
+            "jobs": 5,
+            "pct": 19.2
+          },
+          {
+            "rank": 8,
+            "skill": "Stakeholder Management",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 15.4
+          },
+          {
+            "rank": 9,
+            "skill": "Data Analysis",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 15.4
+          },
+          {
+            "rank": 10,
+            "skill": "Data Visualization",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 15.4
+          }
+        ]
+      },
+      "engineering manager": {
+        "total_jobs": 51,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Software engineering",
+            "category": "Other",
+            "jobs": 15,
+            "pct": 29.4
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 13,
+            "pct": 25.5
+          },
+          {
+            "rank": 3,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 12,
+            "pct": 23.5
+          },
+          {
+            "rank": 4,
+            "skill": "Agile methodologies",
+            "category": "Methodology",
+            "jobs": 9,
+            "pct": 17.6
+          },
+          {
+            "rank": 5,
+            "skill": "TypeScript",
+            "category": "Language",
+            "jobs": 9,
+            "pct": 17.6
+          },
+          {
+            "rank": 6,
+            "skill": "Engineering management",
+            "category": "Other",
+            "jobs": 8,
+            "pct": 15.7
+          },
+          {
+            "rank": 7,
+            "skill": "React.js",
+            "category": "Framework",
+            "jobs": 8,
+            "pct": 15.7
+          },
+          {
+            "rank": 8,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 7,
+            "pct": 13.7
+          },
+          {
+            "rank": 9,
+            "skill": "Go",
+            "category": "Language",
+            "jobs": 6,
+            "pct": 11.8
+          },
+          {
+            "rank": 10,
+            "skill": "JavaScript",
+            "category": "Language",
+            "jobs": 5,
+            "pct": 9.8
+          }
+        ]
+      },
+      "mobile": {
+        "total_jobs": 86,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "jobs": 27,
+            "pct": 31.4
+          },
+          {
+            "rank": 2,
+            "skill": "Android",
+            "category": "Other",
+            "jobs": 24,
+            "pct": 27.9
+          },
+          {
+            "rank": 3,
+            "skill": "Kotlin",
+            "category": "Language",
+            "jobs": 24,
+            "pct": 27.9
+          },
+          {
+            "rank": 4,
+            "skill": "iOS",
+            "category": "Other",
+            "jobs": 22,
+            "pct": 25.6
+          },
+          {
+            "rank": 5,
+            "skill": "Swift",
+            "category": "Language",
+            "jobs": 19,
+            "pct": 22.1
+          },
+          {
+            "rank": 6,
+            "skill": "Flutter",
+            "category": "Other",
+            "jobs": 17,
+            "pct": 19.8
+          },
+          {
+            "rank": 7,
+            "skill": "Git",
+            "category": "Developer Tool",
+            "jobs": 15,
+            "pct": 17.4
+          },
+          {
+            "rank": 8,
+            "skill": "React Native",
+            "category": "Other",
+            "jobs": 15,
+            "pct": 17.4
+          },
+          {
+            "rank": 9,
+            "skill": "Java",
+            "category": "Language",
+            "jobs": 14,
+            "pct": 16.3
+          },
+          {
+            "rank": 10,
+            "skill": "REST API",
+            "category": "Protocol/API",
+            "jobs": 12,
+            "pct": 14.0
+          }
+        ]
+      },
+      "operations": {
+        "total_jobs": 152,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 32,
+            "pct": 21.1
+          },
+          {
+            "rank": 2,
+            "skill": "Microsoft Excel",
+            "category": "Other",
+            "jobs": 25,
+            "pct": 16.4
+          },
+          {
+            "rank": 3,
+            "skill": "Project management",
+            "category": "Other",
+            "jobs": 22,
+            "pct": 14.5
+          },
+          {
+            "rank": 4,
+            "skill": "Tableau",
+            "category": "Developer Tool",
+            "jobs": 17,
+            "pct": 11.2
+          },
+          {
+            "rank": 5,
+            "skill": "Data analysis",
+            "category": "Other",
+            "jobs": 15,
+            "pct": 9.9
+          },
+          {
+            "rank": 6,
+            "skill": "Salesforce",
+            "category": "CMS/SaaS",
+            "jobs": 12,
+            "pct": 7.9
+          },
+          {
+            "rank": 7,
+            "skill": "Google Sheets",
+            "category": "Other",
+            "jobs": 11,
+            "pct": 7.2
+          },
+          {
+            "rank": 8,
+            "skill": "Looker",
+            "category": "Data Platform",
+            "jobs": 11,
+            "pct": 7.2
+          },
+          {
+            "rank": 9,
+            "skill": "Process improvement",
+            "category": "Other",
+            "jobs": 10,
+            "pct": 6.6
+          },
+          {
+            "rank": 10,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 9,
+            "pct": 5.9
+          }
+        ]
+      },
+      "security": {
+        "total_jobs": 107,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "AWS",
+            "category": "Cloud",
+            "jobs": 30,
+            "pct": 28.0
+          },
+          {
+            "rank": 2,
+            "skill": "Python",
+            "category": "Language",
+            "jobs": 29,
+            "pct": 27.1
+          },
+          {
+            "rank": 3,
+            "skill": "Cybersecurity",
+            "category": "Other",
+            "jobs": 22,
+            "pct": 20.6
+          },
+          {
+            "rank": 4,
+            "skill": "ISO/IEC 27001",
+            "category": "Other",
+            "jobs": 16,
+            "pct": 15.0
+          },
+          {
+            "rank": 5,
+            "skill": "Microsoft Azure",
+            "category": "Cloud",
+            "jobs": 13,
+            "pct": 12.1
+          },
+          {
+            "rank": 6,
+            "skill": "Cloud security",
+            "category": "Other",
+            "jobs": 11,
+            "pct": 10.3
+          },
+          {
+            "rank": 7,
+            "skill": "Go",
+            "category": "Language",
+            "jobs": 11,
+            "pct": 10.3
+          },
+          {
+            "rank": 8,
+            "skill": "Vulnerability management",
+            "category": "Other",
+            "jobs": 11,
+            "pct": 10.3
+          },
+          {
+            "rank": 9,
+            "skill": "Azure",
+            "category": "Cloud",
+            "jobs": 10,
+            "pct": 9.3
+          },
+          {
+            "rank": 10,
+            "skill": "Risk Management",
+            "category": "Other",
+            "jobs": 9,
+            "pct": 8.4
+          }
+        ]
+      },
+      "designer": {
+        "total_jobs": 153,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Figma",
+            "category": "Developer Tool",
+            "jobs": 85,
+            "pct": 55.6
+          },
+          {
+            "rank": 2,
+            "skill": "Adobe Illustrator",
+            "category": "Other",
+            "jobs": 35,
+            "pct": 22.9
+          },
+          {
+            "rank": 3,
+            "skill": "Adobe Photoshop",
+            "category": "Other",
+            "jobs": 33,
+            "pct": 21.6
+          },
+          {
+            "rank": 4,
+            "skill": "Product design",
+            "category": "Other",
+            "jobs": 28,
+            "pct": 18.3
+          },
+          {
+            "rank": 5,
+            "skill": "Prototyping",
+            "category": "Other",
+            "jobs": 27,
+            "pct": 17.6
+          },
+          {
+            "rank": 6,
+            "skill": "Graphic design",
+            "category": "Other",
+            "jobs": 27,
+            "pct": 17.6
+          },
+          {
+            "rank": 7,
+            "skill": "Design systems",
+            "category": "Other",
+            "jobs": 25,
+            "pct": 16.3
+          },
+          {
+            "rank": 8,
+            "skill": "Adobe After Effects",
+            "category": "Other",
+            "jobs": 21,
+            "pct": 13.7
+          },
+          {
+            "rank": 9,
+            "skill": "Typography",
+            "category": "Other",
+            "jobs": 20,
+            "pct": 13.1
+          },
+          {
+            "rank": 10,
+            "skill": "CSS",
+            "category": "Protocol/API",
+            "jobs": 18,
+            "pct": 11.8
+          }
+        ]
+      },
+      "marketing": {
+        "total_jobs": 339,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Google Ads",
+            "category": "Marketing",
+            "jobs": 161,
+            "pct": 47.5
+          },
+          {
+            "rank": 2,
+            "skill": "Google Analytics",
+            "category": "Analytics",
+            "jobs": 158,
+            "pct": 46.6
+          },
+          {
+            "rank": 3,
+            "skill": "LinkedIn Ads",
+            "category": "Marketing",
+            "jobs": 145,
+            "pct": 42.8
+          },
+          {
+            "rank": 4,
+            "skill": "Meta Ads Manager",
+            "category": "Marketing",
+            "jobs": 142,
+            "pct": 41.9
+          },
+          {
+            "rank": 5,
+            "skill": "Media buying",
+            "category": "Other",
+            "jobs": 133,
+            "pct": 39.2
+          },
+          {
+            "rank": 6,
+            "skill": "Analytics",
+            "category": "Other",
+            "jobs": 122,
+            "pct": 36.0
+          },
+          {
+            "rank": 7,
+            "skill": "Performance marketing",
+            "category": "Other",
+            "jobs": 114,
+            "pct": 33.6
+          },
+          {
+            "rank": 8,
+            "skill": "Google Campaign Manager",
+            "category": "Other",
+            "jobs": 106,
+            "pct": 31.3
+          },
+          {
+            "rank": 9,
+            "skill": "Media planning",
+            "category": "Other",
+            "jobs": 88,
+            "pct": 26.0
+          },
+          {
+            "rank": 10,
+            "skill": "Market research",
+            "category": "Other",
+            "jobs": 43,
+            "pct": 12.7
+          }
+        ]
+      },
+      "product manager": {
+        "total_jobs": 117,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Product management",
+            "category": "Other",
+            "jobs": 74,
+            "pct": 63.2
+          },
+          {
+            "rank": 2,
+            "skill": "Software as a service (SaaS)",
+            "category": "Other",
+            "jobs": 18,
+            "pct": 15.4
+          },
+          {
+            "rank": 3,
+            "skill": "Data analysis",
+            "category": "Other",
+            "jobs": 16,
+            "pct": 13.7
+          },
+          {
+            "rank": 4,
+            "skill": "Agile methodologies",
+            "category": "Methodology",
+            "jobs": 15,
+            "pct": 12.8
+          },
+          {
+            "rank": 5,
+            "skill": "Machine learning",
+            "category": "AI/ML Concept",
+            "jobs": 14,
+            "pct": 12.0
+          },
+          {
+            "rank": 6,
+            "skill": "Product Management",
+            "category": "Other",
+            "jobs": 13,
+            "pct": 11.1
+          },
+          {
+            "rank": 7,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 13,
+            "pct": 11.1
+          },
+          {
+            "rank": 8,
+            "skill": "Artificial intelligence (AI)",
+            "category": "AI/ML Concept",
+            "jobs": 13,
+            "pct": 11.1
+          },
+          {
+            "rank": 9,
+            "skill": "Jira",
+            "category": "Developer Tool",
+            "jobs": 12,
+            "pct": 10.3
+          },
+          {
+            "rank": 10,
+            "skill": "Application Programming Interface (API)",
+            "category": "Protocol/API",
+            "jobs": 11,
+            "pct": 9.4
+          }
+        ]
+      },
+      "product owner": {
+        "total_jobs": 22,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Scrum",
+            "category": "Methodology",
+            "jobs": 14,
+            "pct": 63.6
+          },
+          {
+            "rank": 2,
+            "skill": "Agile Methodologies",
+            "category": "Other",
+            "jobs": 9,
+            "pct": 40.9
+          },
+          {
+            "rank": 3,
+            "skill": "Backlog Management",
+            "category": "Other",
+            "jobs": 7,
+            "pct": 31.8
+          },
+          {
+            "rank": 4,
+            "skill": "Stakeholder Management",
+            "category": "Other",
+            "jobs": 7,
+            "pct": 31.8
+          },
+          {
+            "rank": 5,
+            "skill": "Jira",
+            "category": "Developer Tool",
+            "jobs": 6,
+            "pct": 27.3
+          },
+          {
+            "rank": 6,
+            "skill": "KPI Analysis",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 18.2
+          },
+          {
+            "rank": 7,
+            "skill": "Kanban",
+            "category": "Methodology",
+            "jobs": 4,
+            "pct": 18.2
+          },
+          {
+            "rank": 8,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 4,
+            "pct": 18.2
+          },
+          {
+            "rank": 9,
+            "skill": "Data Analysis",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 18.2
+          },
+          {
+            "rank": 10,
+            "skill": "Agile",
+            "category": "Methodology",
+            "jobs": 3,
+            "pct": 13.6
+          }
+        ]
+      },
+      "customer success": {
+        "total_jobs": 34,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Go",
+            "category": "Language",
+            "jobs": 7,
+            "pct": 20.6
+          },
+          {
+            "rank": 2,
+            "skill": "HubSpot",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 11.8
+          },
+          {
+            "rank": 3,
+            "skill": "SQL",
+            "category": "Database",
+            "jobs": 4,
+            "pct": 11.8
+          },
+          {
+            "rank": 4,
+            "skill": "Project management",
+            "category": "Other",
+            "jobs": 4,
+            "pct": 11.8
+          },
+          {
+            "rank": 5,
+            "skill": "Application Programming Interface (API)",
+            "category": "Protocol/API",
+            "jobs": 3,
+            "pct": 8.8
+          },
+          {
+            "rank": 6,
+            "skill": "Data analysis",
+            "category": "Other",
+            "jobs": 3,
+            "pct": 8.8
+          },
+          {
+            "rank": 7,
+            "skill": "Technical support",
+            "category": "Other",
+            "jobs": 3,
+            "pct": 8.8
+          },
+          {
+            "rank": 8,
+            "skill": "Salesforce",
+            "category": "CMS/SaaS",
+            "jobs": 3,
+            "pct": 8.8
+          },
+          {
+            "rank": 9,
+            "skill": "Artificial intelligence (AI)",
+            "category": "AI/ML Concept",
+            "jobs": 2,
+            "pct": 5.9
+          },
+          {
+            "rank": 10,
+            "skill": "Change management (CM)",
+            "category": "Other",
+            "jobs": 2,
+            "pct": 5.9
+          }
+        ]
+      },
+      "sales": {
+        "total_jobs": 243,
+        "top_skills": [
+          {
+            "rank": 1,
+            "skill": "Salesforce",
+            "category": "CMS/SaaS",
+            "jobs": 56,
+            "pct": 23.0
+          },
+          {
+            "rank": 2,
+            "skill": "Lead generation",
+            "category": "Other",
+            "jobs": 36,
+            "pct": 14.8
+          },
+          {
+            "rank": 3,
+            "skill": "HubSpot",
+            "category": "Other",
+            "jobs": 27,
+            "pct": 11.1
+          },
+          {
+            "rank": 4,
+            "skill": "Sales development",
+            "category": "Other",
+            "jobs": 25,
+            "pct": 10.3
+          },
+          {
+            "rank": 5,
+            "skill": "Software as a service (SaaS)",
+            "category": "Other",
+            "jobs": 24,
+            "pct": 9.9
+          },
+          {
+            "rank": 6,
+            "skill": "Prospecting",
+            "category": "Other",
+            "jobs": 23,
+            "pct": 9.5
+          },
+          {
+            "rank": 7,
+            "skill": "Cold calling",
+            "category": "Other",
+            "jobs": 21,
+            "pct": 8.6
+          },
+          {
+            "rank": 8,
+            "skill": "CRM tools",
+            "category": "Other",
+            "jobs": 16,
+            "pct": 6.6
+          },
+          {
+            "rank": 9,
+            "skill": "Microsoft 365",
+            "category": "CMS/SaaS",
+            "jobs": 14,
+            "pct": 5.8
+          },
+          {
+            "rank": 10,
+            "skill": "Customer relationship management (CRM)",
+            "category": "Other",
+            "jobs": 14,
+            "pct": 5.8
+          }
+        ]
+      }
+    },
+    "cross_role": [
+      {
+        "skill": "Python",
+        "category": "Language",
+        "roles_count": 18,
+        "roles": [
+          {
+            "role": "data scientist",
+            "jobs": 67,
+            "pct": 82.1
+          },
+          {
+            "role": "machine learning engineer",
+            "jobs": 91,
+            "pct": 74.7
+          },
+          {
+            "role": "ai engineer",
+            "jobs": 88,
+            "pct": 60.2
+          },
+          {
+            "role": "data engineer",
+            "jobs": 189,
+            "pct": 56.1
+          },
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 55.9
+          },
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 51.2
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 49.7
+          },
+          {
+            "role": "devops",
+            "jobs": 218,
+            "pct": 47.7
+          },
+          {
+            "role": "security",
+            "jobs": 107,
+            "pct": 27.1
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 25.5
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 23.1
+          },
+          {
+            "role": "qa",
+            "jobs": 164,
+            "pct": 22.0
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 21.1
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 18.6
+          },
+          {
+            "role": "software engineer",
+            "jobs": 512,
+            "pct": 15.6
+          },
+          {
+            "role": "consultant",
+            "jobs": 107,
+            "pct": 12.1
+          },
+          {
+            "role": "researcher",
+            "jobs": 44,
+            "pct": 9.1
+          },
+          {
+            "role": "support",
+            "jobs": 115,
+            "pct": 8.7
+          }
+        ]
+      },
+      {
+        "skill": "SQL",
+        "category": "Database",
+        "roles_count": 15,
+        "roles": [
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 72.1
+          },
+          {
+            "role": "data engineer",
+            "jobs": 189,
+            "pct": 69.3
+          },
+          {
+            "role": "data scientist",
+            "jobs": 67,
+            "pct": 61.2
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 50.0
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 24.5
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 22.0
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 21.1
+          },
+          {
+            "role": "qa",
+            "jobs": 164,
+            "pct": 20.1
+          },
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 18.2
+          },
+          {
+            "role": "support",
+            "jobs": 115,
+            "pct": 15.7
+          },
+          {
+            "role": "consultant",
+            "jobs": 107,
+            "pct": 12.1
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 11.8
+          },
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 11.1
+          },
+          {
+            "role": "software engineer",
+            "jobs": 512,
+            "pct": 7.0
+          },
+          {
+            "role": "researcher",
+            "jobs": 44,
+            "pct": 4.5
+          }
+        ]
+      },
+      {
+        "skill": "AWS",
+        "category": "Cloud",
+        "roles_count": 14,
+        "roles": [
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 55.3
+          },
+          {
+            "role": "devops",
+            "jobs": 218,
+            "pct": 42.7
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 35.6
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 35.1
+          },
+          {
+            "role": "data engineer",
+            "jobs": 189,
+            "pct": 29.6
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 28.9
+          },
+          {
+            "role": "security",
+            "jobs": 107,
+            "pct": 28.0
+          },
+          {
+            "role": "data scientist",
+            "jobs": 67,
+            "pct": 25.4
+          },
+          {
+            "role": "ai engineer",
+            "jobs": 88,
+            "pct": 23.9
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 23.5
+          },
+          {
+            "role": "machine learning engineer",
+            "jobs": 91,
+            "pct": 19.8
+          },
+          {
+            "role": "consultant",
+            "jobs": 107,
+            "pct": 11.2
+          },
+          {
+            "role": "support",
+            "jobs": 115,
+            "pct": 10.4
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 5.9
+          }
+        ]
+      },
+      {
+        "skill": "CI/CD",
+        "category": "DevOps/CI-CD",
+        "roles_count": 7,
+        "roles": [
+          {
+            "role": "devops",
+            "jobs": 218,
+            "pct": 40.4
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 37.3
+          },
+          {
+            "role": "mobile",
+            "jobs": 86,
+            "pct": 31.4
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 27.1
+          },
+          {
+            "role": "qa",
+            "jobs": 164,
+            "pct": 22.0
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 18.4
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 13.7
+          }
+        ]
+      },
+      {
+        "skill": "Docker",
+        "category": "Container",
+        "roles_count": 6,
+        "roles": [
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 58.2
+          },
+          {
+            "role": "devops",
+            "jobs": 218,
+            "pct": 41.7
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 30.4
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 20.3
+          },
+          {
+            "role": "machine learning engineer",
+            "jobs": 91,
+            "pct": 17.6
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 13.2
+          }
+        ]
+      },
+      {
+        "skill": "Go",
+        "category": "Language",
+        "roles_count": 5,
+        "roles": [
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 21.1
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 20.6
+          },
+          {
+            "role": "software engineer",
+            "jobs": 512,
+            "pct": 17.4
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 11.8
+          },
+          {
+            "role": "security",
+            "jobs": 107,
+            "pct": 10.3
+          }
+        ]
+      },
+      {
+        "skill": "Jira",
+        "category": "Developer Tool",
+        "roles_count": 5,
+        "roles": [
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 31.7
+          },
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 27.3
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 19.2
+          },
+          {
+            "role": "qa",
+            "jobs": 164,
+            "pct": 18.9
+          },
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 10.3
+          }
+        ]
+      },
+      {
+        "skill": "Scrum",
+        "category": "Methodology",
+        "roles_count": 5,
+        "roles": [
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 63.6
+          },
+          {
+            "role": "qa",
+            "jobs": 164,
+            "pct": 24.4
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 23.1
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 22.0
+          },
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 19.2
+          }
+        ]
+      },
+      {
+        "skill": "Data analysis",
+        "category": "Other",
+        "roles_count": 4,
+        "roles": [
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 25.6
+          },
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 13.7
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 9.9
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 8.8
+          }
+        ]
+      },
+      {
+        "skill": "Machine learning",
+        "category": "AI/ML Concept",
+        "roles_count": 4,
+        "roles": [
+          {
+            "role": "machine learning engineer",
+            "jobs": 91,
+            "pct": 53.8
+          },
+          {
+            "role": "data scientist",
+            "jobs": 67,
+            "pct": 37.3
+          },
+          {
+            "role": "ai engineer",
+            "jobs": 88,
+            "pct": 25.0
+          },
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 12.0
+          }
+        ]
+      },
+      {
+        "skill": "Project management",
+        "category": "Other",
+        "roles_count": 4,
+        "roles": [
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 49.0
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 14.5
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 11.8
+          },
+          {
+            "role": "consultant",
+            "jobs": 107,
+            "pct": 9.3
+          }
+        ]
+      },
+      {
+        "skill": "Salesforce",
+        "category": "CMS/SaaS",
+        "roles_count": 4,
+        "roles": [
+          {
+            "role": "sales",
+            "jobs": 243,
+            "pct": 23.0
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 8.8
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 7.9
+          },
+          {
+            "role": "consultant",
+            "jobs": 107,
+            "pct": 7.5
+          }
+        ]
+      },
+      {
+        "skill": "Tableau",
+        "category": "Developer Tool",
+        "roles_count": 4,
+        "roles": [
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 38.4
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 19.2
+          },
+          {
+            "role": "data scientist",
+            "jobs": 67,
+            "pct": 16.4
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 11.2
+          }
+        ]
+      },
+      {
+        "skill": "Agile Methodologies",
+        "category": "Other",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 40.9
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 23.1
+          },
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 7.7
+          }
+        ]
+      },
+      {
+        "skill": "Agile methodologies",
+        "category": "Methodology",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 17.6
+          },
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 14.4
+          },
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 12.8
+          }
+        ]
+      },
+      {
+        "skill": "Artificial intelligence (AI)",
+        "category": "AI/ML Concept",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "ai engineer",
+            "jobs": 88,
+            "pct": 20.5
+          },
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 11.1
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 5.9
+          }
+        ]
+      },
+      {
+        "skill": "DevOps",
+        "category": "DevOps/CI-CD",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "devops",
+            "jobs": 218,
+            "pct": 35.8
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 22.0
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 17.5
+          }
+        ]
+      },
+      {
+        "skill": "Git",
+        "category": "Developer Tool",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 51.0
+          },
+          {
+            "role": "data engineer",
+            "jobs": 189,
+            "pct": 26.5
+          },
+          {
+            "role": "mobile",
+            "jobs": 86,
+            "pct": 17.4
+          }
+        ]
+      },
+      {
+        "skill": "Java",
+        "category": "Language",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 34.3
+          },
+          {
+            "role": "mobile",
+            "jobs": 86,
+            "pct": 16.3
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 14.0
+          }
+        ]
+      },
+      {
+        "skill": "JavaScript",
+        "category": "Language",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 56.6
+          },
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 48.3
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 9.8
+          }
+        ]
+      },
+      {
+        "skill": "Microsoft Azure",
+        "category": "Cloud",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 14.9
+          },
+          {
+            "role": "security",
+            "jobs": 107,
+            "pct": 12.1
+          },
+          {
+            "role": "support",
+            "jobs": 115,
+            "pct": 9.6
+          }
+        ]
+      },
+      {
+        "skill": "PostgreSQL",
+        "category": "Database",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 56.6
+          },
+          {
+            "role": "data engineer",
+            "jobs": 189,
+            "pct": 29.1
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 22.2
+          }
+        ]
+      },
+      {
+        "skill": "React.js",
+        "category": "Framework",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "full stack",
+            "jobs": 447,
+            "pct": 61.3
+          },
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 47.5
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 15.7
+          }
+        ]
+      },
+      {
+        "skill": "TypeScript",
+        "category": "Language",
+        "roles_count": 3,
+        "roles": [
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 44.5
+          },
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 17.6
+          },
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 16.9
+          }
+        ]
+      },
+      {
+        "skill": "Angular",
+        "category": "Framework",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "software engineer",
+            "jobs": 512,
+            "pct": 18.2
+          },
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 15.8
+          }
+        ]
+      },
+      {
+        "skill": "Application Programming Interface (API)",
+        "category": "Protocol/API",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 9.4
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 8.8
+          }
+        ]
+      },
+      {
+        "skill": "Azure",
+        "category": "Cloud",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 11.4
+          },
+          {
+            "role": "security",
+            "jobs": 107,
+            "pct": 9.3
+          }
+        ]
+      },
+      {
+        "skill": "Business intelligence (BI)",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "data engineer",
+            "jobs": 189,
+            "pct": 23.3
+          },
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 12.8
+          }
+        ]
+      },
+      {
+        "skill": "C++",
+        "category": "Language",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "machine learning engineer",
+            "jobs": 91,
+            "pct": 22.0
+          },
+          {
+            "role": "software engineer",
+            "jobs": 512,
+            "pct": 10.0
+          }
+        ]
+      },
+      {
+        "skill": "CSS",
+        "category": "Protocol/API",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 34.0
+          },
+          {
+            "role": "designer",
+            "jobs": 153,
+            "pct": 11.8
+          }
+        ]
+      },
+      {
+        "skill": "Data Analysis",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 18.2
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 15.4
+          }
+        ]
+      },
+      {
+        "skill": "Documentation",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "consultant",
+            "jobs": 107,
+            "pct": 9.3
+          },
+          {
+            "role": "support",
+            "jobs": 115,
+            "pct": 8.7
+          }
+        ]
+      },
+      {
+        "skill": "HubSpot",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 11.8
+          },
+          {
+            "role": "sales",
+            "jobs": 243,
+            "pct": 11.1
+          }
+        ]
+      },
+      {
+        "skill": "Kanban",
+        "category": "Methodology",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 18.2
+          },
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 7.7
+          }
+        ]
+      },
+      {
+        "skill": "Kubernetes",
+        "category": "Container",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "devops",
+            "jobs": 218,
+            "pct": 39.9
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 14.0
+          }
+        ]
+      },
+      {
+        "skill": "Large language model (LLM)",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "ai engineer",
+            "jobs": 88,
+            "pct": 25.0
+          },
+          {
+            "role": "machine learning engineer",
+            "jobs": 91,
+            "pct": 20.9
+          }
+        ]
+      },
+      {
+        "skill": "Looker",
+        "category": "Data Platform",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 14.0
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 7.2
+          }
+        ]
+      },
+      {
+        "skill": "Microservices",
+        "category": "Architecture",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 23.7
+          },
+          {
+            "role": "architect",
+            "jobs": 114,
+            "pct": 13.2
+          }
+        ]
+      },
+      {
+        "skill": "Microsoft Excel",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "data analyst",
+            "jobs": 86,
+            "pct": 20.9
+          },
+          {
+            "role": "operations",
+            "jobs": 152,
+            "pct": 16.4
+          }
+        ]
+      },
+      {
+        "skill": "Node.js",
+        "category": "Framework",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 25.4
+          },
+          {
+            "role": "backend",
+            "jobs": 388,
+            "pct": 20.9
+          }
+        ]
+      },
+      {
+        "skill": "Playwright",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "qa",
+            "jobs": 164,
+            "pct": 24.4
+          },
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 15.8
+          }
+        ]
+      },
+      {
+        "skill": "Project Management",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "project manager",
+            "jobs": 104,
+            "pct": 12.5
+          },
+          {
+            "role": "researcher",
+            "jobs": 44,
+            "pct": 6.8
+          }
+        ]
+      },
+      {
+        "skill": "REST API",
+        "category": "Protocol/API",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 23.0
+          },
+          {
+            "role": "mobile",
+            "jobs": 86,
+            "pct": 14.0
+          }
+        ]
+      },
+      {
+        "skill": "React",
+        "category": "Framework",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "tech lead",
+            "jobs": 59,
+            "pct": 18.6
+          },
+          {
+            "role": "frontend",
+            "jobs": 265,
+            "pct": 17.7
+          }
+        ]
+      },
+      {
+        "skill": "Software as a service (SaaS)",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "product manager",
+            "jobs": 117,
+            "pct": 15.4
+          },
+          {
+            "role": "sales",
+            "jobs": 243,
+            "pct": 9.9
+          }
+        ]
+      },
+      {
+        "skill": "Software engineering",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "engineering manager",
+            "jobs": 51,
+            "pct": 29.4
+          },
+          {
+            "role": "software engineer",
+            "jobs": 512,
+            "pct": 6.6
+          }
+        ]
+      },
+      {
+        "skill": "Stakeholder Management",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "product owner",
+            "jobs": 22,
+            "pct": 31.8
+          },
+          {
+            "role": "business analyst",
+            "jobs": 26,
+            "pct": 15.4
+          }
+        ]
+      },
+      {
+        "skill": "Technical support",
+        "category": "Other",
+        "roles_count": 2,
+        "roles": [
+          {
+            "role": "support",
+            "jobs": 115,
+            "pct": 16.5
+          },
+          {
+            "role": "customer success",
+            "jobs": 34,
+            "pct": 8.8
+          }
+        ]
+      }
+    ],
+    "unique_per_role": [
+      {
+        "role": "software engineer",
+        "jobs": 512,
+        "unique_skills": 1192,
+        "skills_per_job": 2.3
+      },
+      {
+        "role": "backend",
+        "jobs": 388,
+        "unique_skills": 817,
+        "skills_per_job": 2.1
+      },
+      {
+        "role": "full stack",
+        "jobs": 447,
+        "unique_skills": 647,
+        "skills_per_job": 1.4
+      },
+      {
+        "role": "devops",
+        "jobs": 218,
+        "unique_skills": 589,
+        "skills_per_job": 2.7
+      },
+      {
+        "role": "architect",
+        "jobs": 114,
+        "unique_skills": 564,
+        "skills_per_job": 4.9
+      },
+      {
+        "role": "frontend",
+        "jobs": 265,
+        "unique_skills": 528,
+        "skills_per_job": 2.0
+      },
+      {
+        "role": "operations",
+        "jobs": 152,
+        "unique_skills": 508,
+        "skills_per_job": 3.3
+      },
+      {
+        "role": "security",
+        "jobs": 107,
+        "unique_skills": 478,
+        "skills_per_job": 4.5
+      },
+      {
+        "role": "qa",
+        "jobs": 164,
+        "unique_skills": 473,
+        "skills_per_job": 2.9
+      },
+      {
+        "role": "sales",
+        "jobs": 243,
+        "unique_skills": 455,
+        "skills_per_job": 1.9
+      },
+      {
+        "role": "support",
+        "jobs": 115,
+        "unique_skills": 426,
+        "skills_per_job": 3.7
+      },
+      {
+        "role": "marketing",
+        "jobs": 339,
+        "unique_skills": 425,
+        "skills_per_job": 1.3
+      },
+      {
+        "role": "data engineer",
+        "jobs": 189,
+        "unique_skills": 409,
+        "skills_per_job": 2.2
+      },
+      {
+        "role": "consultant",
+        "jobs": 107,
+        "unique_skills": 395,
+        "skills_per_job": 3.7
+      },
+      {
+        "role": "project manager",
+        "jobs": 104,
+        "unique_skills": 381,
+        "skills_per_job": 3.7
+      },
+      {
+        "role": "designer",
+        "jobs": 153,
+        "unique_skills": 355,
+        "skills_per_job": 2.3
+      },
+      {
+        "role": "ai engineer",
+        "jobs": 88,
+        "unique_skills": 343,
+        "skills_per_job": 3.9
+      },
+      {
+        "role": "product manager",
+        "jobs": 117,
+        "unique_skills": 342,
+        "skills_per_job": 2.9
+      },
+      {
+        "role": "mobile",
+        "jobs": 86,
+        "unique_skills": 324,
+        "skills_per_job": 3.8
+      },
+      {
+        "role": "tech lead",
+        "jobs": 59,
+        "unique_skills": 296,
+        "skills_per_job": 5.0
+      },
+      {
+        "role": "data analyst",
+        "jobs": 86,
+        "unique_skills": 293,
+        "skills_per_job": 3.4
+      },
+      {
+        "role": "machine learning engineer",
+        "jobs": 91,
+        "unique_skills": 250,
+        "skills_per_job": 2.7
+      },
+      {
+        "role": "data scientist",
+        "jobs": 67,
+        "unique_skills": 235,
+        "skills_per_job": 3.5
+      },
+      {
+        "role": "engineering manager",
+        "jobs": 51,
+        "unique_skills": 225,
+        "skills_per_job": 4.4
+      },
+      {
+        "role": "business analyst",
+        "jobs": 26,
+        "unique_skills": 120,
+        "skills_per_job": 4.6
+      },
+      {
+        "role": "product owner",
+        "jobs": 22,
+        "unique_skills": 118,
+        "skills_per_job": 5.4
+      },
+      {
+        "role": "customer success",
+        "jobs": 34,
+        "unique_skills": 95,
+        "skills_per_job": 2.8
+      },
+      {
+        "role": "researcher",
+        "jobs": 44,
+        "unique_skills": 75,
+        "skills_per_job": 1.7
+      }
+    ]
+  },
+  "salary": {
+    "note": "Yearly USD. Entries above $500,000 excluded as data errors.",
+    "global": {
+      "n": 1564,
+      "median": 65000,
+      "mean": 93185,
+      "p25": 25200,
+      "p75": 155000,
+      "p90": 215000,
+      "min": 3,
+      "max": 430500
+    },
+    "by_level": [
+      {
+        "level": "junior",
+        "n": 19,
+        "median": 14976,
+        "mean": 16248,
+        "p25": 12000,
+        "p75": 22800
+      },
+      {
+        "level": "mid-level",
+        "n": 124,
+        "median": 25200,
+        "mean": 29817,
+        "p25": 19200,
+        "p75": 30000
+      },
+      {
+        "level": "senior",
+        "n": 170,
+        "median": 37200,
+        "mean": 49896,
+        "p25": 29400,
+        "p75": 50400
+      },
+      {
+        "level": "expert",
+        "n": 11,
+        "median": 45000,
+        "mean": 51381,
+        "p25": 39000,
+        "p75": 64800
+      }
+    ],
+    "by_country": [
+      {
+        "country": "unknown",
+        "n": 1098,
+        "median": 105000,
+        "mean": 119738,
+        "p25": 43800,
+        "p75": 184000
+      },
+      {
+        "country": "Spain",
+        "n": 14,
+        "median": 57200,
+        "mean": 81163,
+        "p25": 34000,
+        "p75": 94861
+      },
+      {
+        "country": "Costa Rica",
+        "n": 9,
+        "median": 45435,
+        "mean": 37346,
+        "p25": 19200,
+        "p75": 50895
+      },
+      {
+        "country": "Ecuador",
+        "n": 8,
+        "median": 41600,
+        "mean": 52462,
+        "p25": 16200,
+        "p75": 130000
+      },
+      {
+        "country": "Chile",
+        "n": 183,
+        "median": 27000,
+        "mean": 28943,
+        "p25": 19800,
+        "p75": 35400
+      },
+      {
+        "country": "Mexico",
+        "n": 32,
+        "median": 22620,
+        "mean": 32524,
+        "p25": 8700,
+        "p75": 62400
+      },
+      {
+        "country": "Argentina",
+        "n": 6,
+        "median": 17680,
+        "mean": 21027,
+        "p25": 13800,
+        "p75": 27000
+      },
+      {
+        "country": "Colombia",
+        "n": 170,
+        "median": 15600,
+        "mean": 22733,
+        "p25": 8370,
+        "p75": 27000
+      },
+      {
+        "country": "Peru",
+        "n": 23,
+        "median": 15276,
+        "mean": 42228,
+        "p25": 12060,
+        "p75": 46200
+      }
+    ],
+    "by_work_mode": [
+      {
+        "work_mode": "on-site",
+        "n": 492,
+        "median": 135000,
+        "mean": 135865,
+        "p25": 49200,
+        "p75": 212000
+      },
+      {
+        "work_mode": "remote",
+        "n": 955,
+        "median": 52200,
+        "mean": 79064,
+        "p25": 21000,
+        "p75": 124800
+      },
+      {
+        "work_mode": "hybrid",
+        "n": 117,
+        "median": 27000,
+        "mean": 28969,
+        "p25": 21000,
+        "p75": 36000
+      }
+    ],
+    "by_role": [
+      {
+        "role": "researcher",
+        "n": 10,
+        "median": 242100,
+        "mean": 199175,
+        "p25": 123650,
+        "p75": 260000
+      },
+      {
+        "role": "engineering manager",
+        "n": 20,
+        "median": 217500,
+        "mean": 201531,
+        "p25": 133590,
+        "p75": 290400
+      },
+      {
+        "role": "machine learning engineer",
+        "n": 50,
+        "median": 211200,
+        "mean": 191348,
+        "p25": 99705,
+        "p75": 236500
+      },
+      {
+        "role": "product manager",
+        "n": 42,
+        "median": 162046,
+        "mean": 143042,
+        "p25": 77418,
+        "p75": 193200
+      },
+      {
+        "role": "software engineer",
+        "n": 157,
+        "median": 135200,
+        "mean": 130481,
+        "p25": 41600,
+        "p75": 203500
+      },
+      {
+        "role": "security",
+        "n": 30,
+        "median": 122816,
+        "mean": 127408,
+        "p25": 31800,
+        "p75": 190000
+      },
+      {
+        "role": "data scientist",
+        "n": 25,
+        "median": 99705,
+        "mean": 123346,
+        "p25": 43800,
+        "p75": 205000
+      },
+      {
+        "role": "operations",
+        "n": 54,
+        "median": 95000,
+        "mean": 99132,
+        "p25": 29120,
+        "p75": 150000
+      },
+      {
+        "role": "customer success",
+        "n": 16,
+        "median": 95000,
+        "mean": 92116,
+        "p25": 42000,
+        "p75": 155000
+      },
+      {
+        "role": "ai engineer",
+        "n": 25,
+        "median": 93600,
+        "mean": 105094,
+        "p25": 45760,
+        "p75": 145600
+      },
+      {
+        "role": "architect",
+        "n": 36,
+        "median": 71100,
+        "mean": 104068,
+        "p25": 34819,
+        "p75": 190000
+      },
+      {
+        "role": "sales",
+        "n": 97,
+        "median": 70000,
+        "mean": 91400,
+        "p25": 18000,
+        "p75": 150000
+      },
+      {
+        "role": "devops",
+        "n": 66,
+        "median": 66000,
+        "mean": 91565,
+        "p25": 30000,
+        "p75": 155000
+      },
+      {
+        "role": "data analyst",
+        "n": 26,
+        "median": 64800,
+        "mean": 81795,
+        "p25": 21000,
+        "p75": 113350
+      },
+      {
+        "role": "frontend",
+        "n": 95,
+        "median": 60000,
+        "mean": 85122,
+        "p25": 22200,
+        "p75": 130000
+      },
+      {
+        "role": "backend",
+        "n": 140,
+        "median": 57000,
+        "mean": 84757,
+        "p25": 27000,
+        "p75": 130000
+      },
+      {
+        "role": "project manager",
+        "n": 44,
+        "median": 51150,
+        "mean": 90043,
+        "p25": 21000,
+        "p75": 176950
+      },
+      {
+        "role": "other",
+        "n": 174,
+        "median": 48375,
+        "mean": 77804,
+        "p25": 17850,
+        "p75": 109250
+      },
+      {
+        "role": "designer",
+        "n": 61,
+        "median": 46800,
+        "mean": 81178,
+        "p25": 15000,
+        "p75": 150000
+      },
+      {
+        "role": "mobile",
+        "n": 36,
+        "median": 42640,
+        "mean": 68976,
+        "p25": 27600,
+        "p75": 85280
+      },
+      {
+        "role": "data engineer",
+        "n": 39,
+        "median": 42000,
+        "mean": 76403,
+        "p25": 26400,
+        "p75": 145000
+      },
+      {
+        "role": "full stack",
+        "n": 113,
+        "median": 42000,
+        "mean": 69112,
+        "p25": 28152,
+        "p75": 80100
+      },
+      {
+        "role": "tech lead",
+        "n": 23,
+        "median": 36600,
+        "mean": 63665,
+        "p25": 27000,
+        "p75": 78000
+      },
+      {
+        "role": "consultant",
+        "n": 17,
+        "median": 34200,
+        "mean": 57730,
+        "p25": 29400,
+        "p75": 54000
+      },
+      {
+        "role": "support",
+        "n": 50,
+        "median": 31248,
+        "mean": 54897,
+        "p25": 13200,
+        "p75": 105000
+      },
+      {
+        "role": "product owner",
+        "n": 7,
+        "median": 27000,
+        "mean": 50293,
+        "p25": 24600,
+        "p75": 88000
+      },
+      {
+        "role": "qa",
+        "n": 46,
+        "median": 26314,
+        "mean": 42369,
+        "p25": 15600,
+        "p75": 44720
+      },
+      {
+        "role": "marketing",
+        "n": 53,
+        "median": 26000,
+        "mean": 53916,
+        "p25": 10440,
+        "p75": 92500
+      },
+      {
+        "role": "business analyst",
+        "n": 7,
+        "median": 22800,
+        "mean": 23485,
+        "p25": 19200,
+        "p75": 25200
+      }
+    ]
+  },
+  "role_similarity": {
+    "top_similar": [
+      {
+        "rank": 1,
+        "role_a": "backend",
+        "role_b": "full stack",
+        "jaccard_pct": 34.1,
+        "shared_skills": 372,
+        "total_unique_skills": 1092
+      },
+      {
+        "rank": 2,
+        "role_a": "frontend",
+        "role_b": "full stack",
+        "jaccard_pct": 32.8,
+        "shared_skills": 290,
+        "total_unique_skills": 885
+      },
+      {
+        "rank": 3,
+        "role_a": "backend",
+        "role_b": "frontend",
+        "jaccard_pct": 26.4,
+        "shared_skills": 281,
+        "total_unique_skills": 1064
+      },
+      {
+        "rank": 4,
+        "role_a": "data scientist",
+        "role_b": "machine learning engineer",
+        "jaccard_pct": 25.3,
+        "shared_skills": 98,
+        "total_unique_skills": 387
+      },
+      {
+        "rank": 5,
+        "role_a": "full stack",
+        "role_b": "tech lead",
+        "jaccard_pct": 25.1,
+        "shared_skills": 189,
+        "total_unique_skills": 754
+      },
+      {
+        "rank": 6,
+        "role_a": "data analyst",
+        "role_b": "data engineer",
+        "jaccard_pct": 24.2,
+        "shared_skills": 137,
+        "total_unique_skills": 565
+      },
+      {
+        "rank": 7,
+        "role_a": "frontend",
+        "role_b": "tech lead",
+        "jaccard_pct": 23.9,
+        "shared_skills": 159,
+        "total_unique_skills": 665
+      },
+      {
+        "rank": 8,
+        "role_a": "data analyst",
+        "role_b": "data scientist",
+        "jaccard_pct": 23.7,
+        "shared_skills": 101,
+        "total_unique_skills": 427
+      },
+      {
+        "rank": 9,
+        "role_a": "engineering manager",
+        "role_b": "tech lead",
+        "jaccard_pct": 23.5,
+        "shared_skills": 99,
+        "total_unique_skills": 422
+      },
+      {
+        "rank": 10,
+        "role_a": "architect",
+        "role_b": "data engineer",
+        "jaccard_pct": 23.3,
+        "shared_skills": 184,
+        "total_unique_skills": 789
+      },
+      {
+        "rank": 11,
+        "role_a": "ai engineer",
+        "role_b": "machine learning engineer",
+        "jaccard_pct": 23.0,
+        "shared_skills": 111,
+        "total_unique_skills": 482
+      },
+      {
+        "rank": 12,
+        "role_a": "data engineer",
+        "role_b": "data scientist",
+        "jaccard_pct": 22.7,
+        "shared_skills": 119,
+        "total_unique_skills": 525
+      },
+      {
+        "rank": 13,
+        "role_a": "backend",
+        "role_b": "tech lead",
+        "jaccard_pct": 22.6,
+        "shared_skills": 205,
+        "total_unique_skills": 908
+      },
+      {
+        "rank": 14,
+        "role_a": "architect",
+        "role_b": "backend",
+        "jaccard_pct": 22.5,
+        "shared_skills": 254,
+        "total_unique_skills": 1127
+      },
+      {
+        "rank": 15,
+        "role_a": "architect",
+        "role_b": "full stack",
+        "jaccard_pct": 22.3,
+        "shared_skills": 221,
+        "total_unique_skills": 990
+      },
+      {
+        "rank": 16,
+        "role_a": "backend",
+        "role_b": "data engineer",
+        "jaccard_pct": 21.9,
+        "shared_skills": 220,
+        "total_unique_skills": 1006
+      },
+      {
+        "rank": 17,
+        "role_a": "ai engineer",
+        "role_b": "tech lead",
+        "jaccard_pct": 21.5,
+        "shared_skills": 113,
+        "total_unique_skills": 526
+      },
+      {
+        "rank": 18,
+        "role_a": "architect",
+        "role_b": "devops",
+        "jaccard_pct": 21.4,
+        "shared_skills": 203,
+        "total_unique_skills": 950
+      },
+      {
+        "rank": 19,
+        "role_a": "ai engineer",
+        "role_b": "full stack",
+        "jaccard_pct": 21.3,
+        "shared_skills": 174,
+        "total_unique_skills": 816
+      },
+      {
+        "rank": 20,
+        "role_a": "architect",
+        "role_b": "tech lead",
+        "jaccard_pct": 21.3,
+        "shared_skills": 151,
+        "total_unique_skills": 709
+      }
+    ],
+    "bottom_similar": [
+      {
+        "rank": 1,
+        "role_a": "mobile",
+        "role_b": "researcher",
+        "jaccard_pct": 3.1,
+        "shared_skills": 12,
+        "total_unique_skills": 387
+      },
+      {
+        "rank": 2,
+        "role_a": "researcher",
+        "role_b": "sales",
+        "jaccard_pct": 3.1,
+        "shared_skills": 16,
+        "total_unique_skills": 514
+      },
+      {
+        "rank": 3,
+        "role_a": "researcher",
+        "role_b": "software engineer",
+        "jaccard_pct": 3.2,
+        "shared_skills": 39,
+        "total_unique_skills": 1228
+      },
+      {
+        "rank": 4,
+        "role_a": "business analyst",
+        "role_b": "support",
+        "jaccard_pct": 3.4,
+        "shared_skills": 18,
+        "total_unique_skills": 528
+      },
+      {
+        "rank": 5,
+        "role_a": "devops",
+        "role_b": "researcher",
+        "jaccard_pct": 3.4,
+        "shared_skills": 22,
+        "total_unique_skills": 642
+      },
+      {
+        "rank": 6,
+        "role_a": "full stack",
+        "role_b": "researcher",
+        "jaccard_pct": 3.4,
+        "shared_skills": 24,
+        "total_unique_skills": 698
+      },
+      {
+        "rank": 7,
+        "role_a": "product owner",
+        "role_b": "sales",
+        "jaccard_pct": 3.4,
+        "shared_skills": 19,
+        "total_unique_skills": 554
+      },
+      {
+        "rank": 8,
+        "role_a": "product owner",
+        "role_b": "software engineer",
+        "jaccard_pct": 3.4,
+        "shared_skills": 43,
+        "total_unique_skills": 1267
+      },
+      {
+        "rank": 9,
+        "role_a": "business analyst",
+        "role_b": "sales",
+        "jaccard_pct": 3.6,
+        "shared_skills": 20,
+        "total_unique_skills": 555
+      },
+      {
+        "rank": 10,
+        "role_a": "backend",
+        "role_b": "researcher",
+        "jaccard_pct": 3.7,
+        "shared_skills": 32,
+        "total_unique_skills": 860
+      }
+    ],
+    "top_pairs_detail": [
+      {
+        "role_a": "backend",
+        "role_b": "full stack",
+        "jaccard_pct": 34.1,
+        "top_shared_skills": [
+          {
+            "skill": "Python",
+            "category": "Language",
+            "backend_pct": 49.7,
+            "full stack_pct": 55.9
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "backend_pct": 35.1,
+            "full stack_pct": 55.3
+          },
+          {
+            "skill": "Docker",
+            "category": "Container",
+            "backend_pct": 30.4,
+            "full stack_pct": 58.2
+          },
+          {
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "backend_pct": 22.2,
+            "full stack_pct": 56.6
+          },
+          {
+            "skill": "React.js",
+            "category": "Framework",
+            "backend_pct": 12.1,
+            "full stack_pct": 61.3
+          },
+          {
+            "skill": "Git",
+            "category": "Developer Tool",
+            "backend_pct": 16.0,
+            "full stack_pct": 51.0
+          },
+          {
+            "skill": "JavaScript",
+            "category": "Language",
+            "backend_pct": 9.3,
+            "full stack_pct": 56.6
+          },
+          {
+            "skill": "Redis",
+            "category": "Database",
+            "backend_pct": 11.3,
+            "full stack_pct": 43.8
+          }
+        ]
+      },
+      {
+        "role_a": "frontend",
+        "role_b": "full stack",
+        "jaccard_pct": 32.8,
+        "top_shared_skills": [
+          {
+            "skill": "React.js",
+            "category": "Framework",
+            "frontend_pct": 47.5,
+            "full stack_pct": 61.3
+          },
+          {
+            "skill": "JavaScript",
+            "category": "Language",
+            "frontend_pct": 48.3,
+            "full stack_pct": 56.6
+          },
+          {
+            "skill": "TypeScript",
+            "category": "Language",
+            "frontend_pct": 44.5,
+            "full stack_pct": 32.0
+          },
+          {
+            "skill": "Python",
+            "category": "Language",
+            "frontend_pct": 13.2,
+            "full stack_pct": 55.9
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "frontend_pct": 11.3,
+            "full stack_pct": 55.3
+          },
+          {
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "frontend_pct": 9.8,
+            "full stack_pct": 56.6
+          },
+          {
+            "skill": "Git",
+            "category": "Developer Tool",
+            "frontend_pct": 14.7,
+            "full stack_pct": 51.0
+          },
+          {
+            "skill": "Docker",
+            "category": "Container",
+            "frontend_pct": 7.5,
+            "full stack_pct": 58.2
+          }
+        ]
+      },
+      {
+        "role_a": "backend",
+        "role_b": "frontend",
+        "jaccard_pct": 26.4,
+        "top_shared_skills": [
+          {
+            "skill": "TypeScript",
+            "category": "Language",
+            "backend_pct": 18.6,
+            "frontend_pct": 44.5
+          },
+          {
+            "skill": "Python",
+            "category": "Language",
+            "backend_pct": 49.7,
+            "frontend_pct": 13.2
+          },
+          {
+            "skill": "React.js",
+            "category": "Framework",
+            "backend_pct": 12.1,
+            "frontend_pct": 47.5
+          },
+          {
+            "skill": "JavaScript",
+            "category": "Language",
+            "backend_pct": 9.3,
+            "frontend_pct": 48.3
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "backend_pct": 35.1,
+            "frontend_pct": 11.3
+          },
+          {
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "backend_pct": 27.1,
+            "frontend_pct": 15.8
+          },
+          {
+            "skill": "REST API",
+            "category": "Protocol/API",
+            "backend_pct": 17.8,
+            "frontend_pct": 23.0
+          },
+          {
+            "skill": "Java",
+            "category": "Language",
+            "backend_pct": 34.3,
+            "frontend_pct": 5.7
+          }
+        ]
+      },
+      {
+        "role_a": "data scientist",
+        "role_b": "machine learning engineer",
+        "jaccard_pct": 25.3,
+        "top_shared_skills": [
+          {
+            "skill": "Python",
+            "category": "Language",
+            "data scientist_pct": 82.1,
+            "machine learning engineer_pct": 74.7
+          },
+          {
+            "skill": "Machine learning",
+            "category": "AI/ML Concept",
+            "data scientist_pct": 37.3,
+            "machine learning engineer_pct": 53.8
+          },
+          {
+            "skill": "SQL",
+            "category": "Database",
+            "data scientist_pct": 61.2,
+            "machine learning engineer_pct": 9.9
+          },
+          {
+            "skill": "PyTorch",
+            "category": "AI/ML Framework",
+            "data scientist_pct": 11.9,
+            "machine learning engineer_pct": 53.8
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "data scientist_pct": 25.4,
+            "machine learning engineer_pct": 19.8
+          },
+          {
+            "skill": "TensorFlow",
+            "category": "AI/ML Framework",
+            "data scientist_pct": 10.4,
+            "machine learning engineer_pct": 30.8
+          },
+          {
+            "skill": "Data science",
+            "category": "Other",
+            "data scientist_pct": 37.3,
+            "machine learning engineer_pct": 3.3
+          },
+          {
+            "skill": "Machine Learning",
+            "category": "Other",
+            "data scientist_pct": 22.4,
+            "machine learning engineer_pct": 7.7
+          }
+        ]
+      },
+      {
+        "role_a": "full stack",
+        "role_b": "tech lead",
+        "jaccard_pct": 25.1,
+        "top_shared_skills": [
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "full stack_pct": 55.3,
+            "tech lead_pct": 35.6
+          },
+          {
+            "skill": "Docker",
+            "category": "Container",
+            "full stack_pct": 58.2,
+            "tech lead_pct": 20.3
+          },
+          {
+            "skill": "Python",
+            "category": "Language",
+            "full stack_pct": 55.9,
+            "tech lead_pct": 18.6
+          },
+          {
+            "skill": "React.js",
+            "category": "Framework",
+            "full stack_pct": 61.3,
+            "tech lead_pct": 11.9
+          },
+          {
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "full stack_pct": 56.6,
+            "tech lead_pct": 13.6
+          },
+          {
+            "skill": "JavaScript",
+            "category": "Language",
+            "full stack_pct": 56.6,
+            "tech lead_pct": 6.8
+          },
+          {
+            "skill": "Git",
+            "category": "Developer Tool",
+            "full stack_pct": 51.0,
+            "tech lead_pct": 8.5
+          },
+          {
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "full stack_pct": 19.9,
+            "tech lead_pct": 37.3
+          }
+        ]
+      },
+      {
+        "role_a": "data analyst",
+        "role_b": "data engineer",
+        "jaccard_pct": 24.2,
+        "top_shared_skills": [
+          {
+            "skill": "SQL",
+            "category": "Database",
+            "data analyst_pct": 72.1,
+            "data engineer_pct": 69.3
+          },
+          {
+            "skill": "Python",
+            "category": "Language",
+            "data analyst_pct": 51.2,
+            "data engineer_pct": 56.1
+          },
+          {
+            "skill": "Tableau",
+            "category": "Developer Tool",
+            "data analyst_pct": 38.4,
+            "data engineer_pct": 12.7
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "data analyst_pct": 9.3,
+            "data engineer_pct": 29.6
+          },
+          {
+            "skill": "Data governance",
+            "category": "Other",
+            "data analyst_pct": 10.5,
+            "data engineer_pct": 27.5
+          },
+          {
+            "skill": "Business intelligence (BI)",
+            "category": "Other",
+            "data analyst_pct": 12.8,
+            "data engineer_pct": 23.3
+          },
+          {
+            "skill": "PostgreSQL",
+            "category": "Database",
+            "data analyst_pct": 2.3,
+            "data engineer_pct": 29.1
+          },
+          {
+            "skill": "Data engineering",
+            "category": "Other",
+            "data analyst_pct": 1.2,
+            "data engineer_pct": 29.6
+          }
+        ]
+      },
+      {
+        "role_a": "frontend",
+        "role_b": "tech lead",
+        "jaccard_pct": 23.9,
+        "top_shared_skills": [
+          {
+            "skill": "TypeScript",
+            "category": "Language",
+            "frontend_pct": 44.5,
+            "tech lead_pct": 16.9
+          },
+          {
+            "skill": "React.js",
+            "category": "Framework",
+            "frontend_pct": 47.5,
+            "tech lead_pct": 11.9
+          },
+          {
+            "skill": "JavaScript",
+            "category": "Language",
+            "frontend_pct": 48.3,
+            "tech lead_pct": 6.8
+          },
+          {
+            "skill": "CI/CD",
+            "category": "DevOps/CI-CD",
+            "frontend_pct": 15.8,
+            "tech lead_pct": 37.3
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "frontend_pct": 11.3,
+            "tech lead_pct": 35.6
+          },
+          {
+            "skill": "CSS",
+            "category": "Protocol/API",
+            "frontend_pct": 34.0,
+            "tech lead_pct": 5.1
+          },
+          {
+            "skill": "React",
+            "category": "Framework",
+            "frontend_pct": 17.7,
+            "tech lead_pct": 18.6
+          },
+          {
+            "skill": "HTML",
+            "category": "Protocol/API",
+            "frontend_pct": 29.4,
+            "tech lead_pct": 5.1
+          }
+        ]
+      },
+      {
+        "role_a": "data analyst",
+        "role_b": "data scientist",
+        "jaccard_pct": 23.7,
+        "top_shared_skills": [
+          {
+            "skill": "SQL",
+            "category": "Database",
+            "data analyst_pct": 72.1,
+            "data scientist_pct": 61.2
+          },
+          {
+            "skill": "Python",
+            "category": "Language",
+            "data analyst_pct": 51.2,
+            "data scientist_pct": 82.1
+          },
+          {
+            "skill": "Tableau",
+            "category": "Developer Tool",
+            "data analyst_pct": 38.4,
+            "data scientist_pct": 16.4
+          },
+          {
+            "skill": "Machine learning",
+            "category": "AI/ML Concept",
+            "data analyst_pct": 3.5,
+            "data scientist_pct": 37.3
+          },
+          {
+            "skill": "Data science",
+            "category": "Other",
+            "data analyst_pct": 3.5,
+            "data scientist_pct": 37.3
+          },
+          {
+            "skill": "Data analysis",
+            "category": "Other",
+            "data analyst_pct": 25.6,
+            "data scientist_pct": 13.4
+          },
+          {
+            "skill": "AWS",
+            "category": "Cloud",
+            "data analyst_pct": 9.3,
+            "data scientist_pct": 25.4
+          },
+          {
+            "skill": "Microsoft Power BI",
+            "category": "Other",
+            "data analyst_pct": 24.4,
+            "data scientist_pct": 7.5
+          }
+        ]
+      }
+    ]
+  }
+}
