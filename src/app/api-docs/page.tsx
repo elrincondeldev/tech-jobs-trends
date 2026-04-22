@@ -2,6 +2,8 @@ import { NavBar } from "@/features/nav/ui/NavBar";
 import { EndpointCard } from "@/features/api-docs/ui/EndpointCard";
 import { endpoints } from "@/features/api-docs/model/endpoints";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "API Reference · Tech Jobs Trends",
   description: "Public REST API for LATAM tech job market data. No auth required.",

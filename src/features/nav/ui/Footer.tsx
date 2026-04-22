@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { unstable_noStore as noStore } from "next/cache";
 import { getReport } from "@/shared/lib/report";
 
 const InstagramIcon = () => (
@@ -16,6 +17,7 @@ const LinkedInIcon = () => (
 );
 
 export async function Footer() {
+  noStore();
   const report = await getReport();
 
   const generatedAt = report

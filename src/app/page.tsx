@@ -7,7 +7,7 @@ import { DistributionSection } from "@/features/dashboard/ui/DistributionSection
 import { SalarySection } from "@/features/dashboard/ui/SalarySection";
 import { SkillsByRoleSection } from "@/features/dashboard/ui/SkillsByRoleSection";
 
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 export default async function Home() {
   const report = await getReport();
