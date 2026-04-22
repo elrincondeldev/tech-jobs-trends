@@ -8,6 +8,7 @@ import {
 } from "recharts";
 import type { DistributionEntry } from "@/entities/report/model/types";
 import { UnknownNote } from "@/shared/ui/UnknownNote";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 const WORK_MODE_COLORS = ["#111111", "#8B5CF6", "#16A34A"];
 const LEVEL_COLORS = ["#111111", "#374151", "#6B7280", "#9CA3AF", "#D1D5DB"];
@@ -86,6 +87,12 @@ function DonutCard({
 export function DistributionSection({ workMode, byLevel, byCountry }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  const isMobile = useIsMobile();
+
+  const chartMargin = isMobile
+    ? { top: 0, right: 24, left: 0, bottom: 0 }
+    : { top: 0, right: 60, left: 100, bottom: 0 };
+  const yAxisWidth = isMobile ? 80 : 96;
 
   const countryUnknown = byCountry.find((c) => c.value === "unknown");
   const levelUnknown = byLevel.find((l) => l.value === "unknown");
@@ -146,7 +153,7 @@ export function DistributionSection({ workMode, byLevel, byCountry }: Props) {
           <BarChart
             data={countries}
             layout="vertical"
-            margin={{ top: 0, right: 60, left: 100, bottom: 0 }}
+            margin={chartMargin}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" horizontal={false} />
             <XAxis
@@ -158,10 +165,10 @@ export function DistributionSection({ workMode, byLevel, byCountry }: Props) {
             <YAxis
               type="category"
               dataKey="name"
-              tick={{ fontSize: 11, fill: "#6B7280" }}
+              tick={{ fontSize: isMobile ? 10 : 11, fill: "#6B7280" }}
               tickLine={false}
               axisLine={false}
-              width={96}
+              width={yAxisWidth}
             />
             <Tooltip
               content={({ active, payload }) => {

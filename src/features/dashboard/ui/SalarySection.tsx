@@ -8,6 +8,7 @@ import {
 import type { SalaryByRole, SalaryStats } from "@/entities/report/model/types";
 import { UnknownNote } from "@/shared/ui/UnknownNote";
 import { InfoTooltip } from "@/shared/ui/InfoTooltip";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 interface Props {
   global: SalaryStats;
@@ -25,6 +26,12 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
   const withoutPct = Math.round((withoutSalary / totalOffers) * 100 * 10) / 10;
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  const isMobile = useIsMobile();
+
+  const chartMargin = isMobile
+    ? { top: 0, right: 45, left: 0, bottom: 0 }
+    : { top: 0, right: 80, left: 130, bottom: 0 };
+  const yAxisWidth = isMobile ? 90 : 126;
 
   const data = byRole
     .filter((r) => r.n >= 10)
@@ -107,7 +114,7 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
           <BarChart
             data={data}
             layout="vertical"
-            margin={{ top: 0, right: 80, left: 130, bottom: 0 }}
+            margin={chartMargin}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" horizontal={false} />
             <XAxis
@@ -120,10 +127,10 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
             <YAxis
               type="category"
               dataKey="name"
-              tick={{ fontSize: 11, fill: "#6B7280" }}
+              tick={{ fontSize: isMobile ? 10 : 11, fill: "#6B7280" }}
               tickLine={false}
               axisLine={false}
-              width={126}
+              width={yAxisWidth}
             />
             <Tooltip
               content={({ active, payload }) => {

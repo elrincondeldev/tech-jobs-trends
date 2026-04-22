@@ -7,6 +7,7 @@ import {
 } from "recharts";
 import type { RoleEntry } from "@/entities/report/model/types";
 import { UnknownNote } from "@/shared/ui/UnknownNote";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 interface Props {
   roles: RoleEntry[];
@@ -15,6 +16,12 @@ interface Props {
 export function RolesChart({ roles }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const isMobile = useIsMobile();
+
+  const chartMargin = isMobile
+    ? { top: 0, right: 45, left: 0, bottom: 0 }
+    : { top: 0, right: 80, left: 130, bottom: 0 };
+  const yAxisWidth = isMobile ? 90 : 126;
 
   const other = roles.find((r) => r.role === "other");
   const data = roles
@@ -52,7 +59,7 @@ export function RolesChart({ roles }: Props) {
           <BarChart
             data={data}
             layout="vertical"
-            margin={{ top: 0, right: 80, left: 130, bottom: 0 }}
+            margin={chartMargin}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" horizontal={false} />
             <XAxis
@@ -64,10 +71,10 @@ export function RolesChart({ roles }: Props) {
             <YAxis
               type="category"
               dataKey="name"
-              tick={{ fontSize: 11, fill: "#6B7280" }}
+              tick={{ fontSize: isMobile ? 10 : 11, fill: "#6B7280" }}
               tickLine={false}
               axisLine={false}
-              width={126}
+              width={yAxisWidth}
             />
             <Tooltip
               content={({ active, payload }) => {

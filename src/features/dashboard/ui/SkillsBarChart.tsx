@@ -8,6 +8,7 @@ import {
 } from "recharts";
 import type { SkillEntry } from "@/entities/report/model/types";
 import { UnknownNote } from "@/shared/ui/UnknownNote";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 const CATEGORY_COLORS: Record<string, string> = {
   Language: "#8B5CF6",
@@ -37,6 +38,12 @@ export function SkillsBarChart({ skills, totalOffers, withTechnologies }: Props)
   const withoutPct = Math.round((withoutTech / totalOffers) * 100 * 10) / 10;
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const isMobile = useIsMobile();
+
+  const chartMargin = isMobile
+    ? { top: 0, right: 30, left: 0, bottom: 0 }
+    : { top: 0, right: 60, left: 120, bottom: 0 };
+  const yAxisWidth = isMobile ? 88 : 116;
 
   const data = skills.slice(0, 20).map((s) => ({
     name: s.skill,
@@ -86,7 +93,7 @@ export function SkillsBarChart({ skills, totalOffers, withTechnologies }: Props)
           <BarChart
             data={data}
             layout="vertical"
-            margin={{ top: 0, right: 60, left: 120, bottom: 0 }}
+            margin={chartMargin}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" horizontal={false} />
             <XAxis
@@ -99,10 +106,10 @@ export function SkillsBarChart({ skills, totalOffers, withTechnologies }: Props)
             <YAxis
               type="category"
               dataKey="name"
-              tick={{ fontSize: 11, fill: "#6B7280" }}
+              tick={{ fontSize: isMobile ? 10 : 11, fill: "#6B7280" }}
               tickLine={false}
               axisLine={false}
-              width={116}
+              width={yAxisWidth}
             />
             <Tooltip
               content={({ active, payload }) => {

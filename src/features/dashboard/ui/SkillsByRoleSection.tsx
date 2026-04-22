@@ -6,6 +6,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from "recharts";
 import type { RoleSkillData } from "@/entities/report/model/types";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 interface Props {
   byRole: Record<string, RoleSkillData>;
@@ -20,6 +21,12 @@ const FEATURED_ROLES = [
 export function SkillsByRoleSection({ byRole }: Props) {
   const roles = FEATURED_ROLES.filter((r) => byRole[r]);
   const [active, setActive] = useState(roles[0]);
+  const isMobile = useIsMobile();
+
+  const chartMargin = isMobile
+    ? { top: 0, right: 30, left: 0, bottom: 0 }
+    : { top: 0, right: 60, left: 120, bottom: 0 };
+  const yAxisWidth = isMobile ? 88 : 116;
 
   const roleData = byRole[active];
   const chartData = roleData?.top_skills.slice(0, 10).map((s) => ({
@@ -79,7 +86,7 @@ export function SkillsByRoleSection({ byRole }: Props) {
             <BarChart
               data={chartData}
               layout="vertical"
-              margin={{ top: 0, right: 60, left: 120, bottom: 0 }}
+              margin={chartMargin}
             >
               <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" horizontal={false} />
               <XAxis
@@ -92,10 +99,10 @@ export function SkillsByRoleSection({ byRole }: Props) {
               <YAxis
                 type="category"
                 dataKey="name"
-                tick={{ fontSize: 11, fill: "#6B7280" }}
+                tick={{ fontSize: isMobile ? 10 : 11, fill: "#6B7280" }}
                 tickLine={false}
                 axisLine={false}
-                width={116}
+                width={yAxisWidth}
               />
               <Tooltip
                 content={({ active: a, payload }) => {
