@@ -91,7 +91,7 @@ export default function ApiDocsPage() {
           <h2 className="font-display font-semibold text-lg text-[var(--primary)] mb-4">Endpoints</h2>
           <div className="space-y-3">
             {endpoints.map((ep, i) => (
-              <EndpointCard key={ep.path} endpoint={ep} defaultOpen={i === 0} />
+              <EndpointCard key={ep.path} endpoint={ep} />
             ))}
           </div>
         </div>
