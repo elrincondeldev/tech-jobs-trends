@@ -10,6 +10,7 @@ export async function getReport(): Promise<ReportDocument | null> {
       {},
       { projection: { _id: 0 }, sort: { "meta.generated_at": -1 } }
     );
+    console.log(doc);
     return doc;
   } catch {
     return null;
