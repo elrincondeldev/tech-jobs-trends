@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { GitHubStarButton } from "./GitHubStarButton";
 
 const links = [
   { href: "/#overview", label: "Overview" },
@@ -33,12 +34,15 @@ export function NavBar() {
             </Link>
           ))}
         </nav>
-        <Link
-          href="/api-docs"
-          className="text-xs font-medium px-3 py-1.5 border border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-colors"
-        >
-          API Docs
-        </Link>
+        <div className="flex items-center gap-3">
+          <GitHubStarButton />
+          <Link
+            href="/api-docs"
+            className="text-xs font-medium px-3 py-1.5 border border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-colors"
+          >
+            API Docs
+          </Link>
+        </div>
       </div>
     </motion.header>
   );
