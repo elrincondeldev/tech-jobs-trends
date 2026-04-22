@@ -1,0 +1,8 @@
+.env
+.next
+node_modules
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+report.json
