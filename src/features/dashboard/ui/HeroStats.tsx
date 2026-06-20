@@ -62,7 +62,16 @@ export function HeroStats({ totalOffers, salaryPct, remotePct, topCountry, topCo
           Aggregated data from +{Math.round(totalOffers / 1000) * 1000} job postings across LATAM and Spain in the last 12 months.<br />
           Skills, salaries, roles, and market distribution — all in one place.
         </p>
-   
+
+        <div className="mt-5 inline-flex items-center gap-2 rounded border border-[var(--border)] px-3 py-1.5">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--secondary)] opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--secondary)]" />
+          </span>
+          <span className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-wider">
+            Live dataset · Updated {new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+          </span>
+        </div>
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--border)]">
@@ -72,7 +81,8 @@ export function HeroStats({ totalOffers, salaryPct, remotePct, topCountry, topCo
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 * i }}
-            className="bg-[var(--surface)] px-6 py-8"
+            whileHover={{ y: -4 }}
+            className="bg-[var(--surface)] px-6 py-8 transition-colors hover:bg-[var(--surface-muted,#fafafa)]"
           >
             <div className="text-3xl md:text-4xl font-display font-bold text-[var(--primary)] mb-2">
               {typeof stat.value === "string" ? (
