@@ -6,6 +6,7 @@ import { RolesChart } from "@/features/dashboard/ui/RolesChart";
 import { DistributionSection } from "@/features/dashboard/ui/DistributionSection";
 import { SalarySection } from "@/features/dashboard/ui/SalarySection";
 import { SkillsByRoleSection } from "@/features/dashboard/ui/SkillsByRoleSection";
+import { ScrollProgress } from "@/shared/ui/ScrollProgress";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +26,7 @@ export default async function Home() {
 
   return (
     <>
+      <ScrollProgress />
       <NavBar />
       <main>
         <HeroStats

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, Cell,
@@ -39,19 +39,25 @@ export function SkillsBarChart({ skills, totalOffers, withTechnologies }: Props)
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const isMobile = useIsMobile();
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   const chartMargin = isMobile
     ? { top: 0, right: 30, left: 0, bottom: 0 }
     : { top: 0, right: 60, left: 120, bottom: 0 };
   const yAxisWidth = isMobile ? 88 : 116;
 
-  const data = skills.slice(0, 20).map((s) => ({
+  const allData = skills.slice(0, 20).map((s) => ({
     name: s.skill,
     jobs: s.jobs,
     pct: s.pct,
     category: s.category,
     color: CATEGORY_COLORS[s.category] ?? "#9CA3AF",
   }));
+
+  const categories = Array.from(new Set(allData.map((d) => d.category))).slice(0, 10);
+  const data = activeCategory
+    ? allData.filter((d) => d.category === activeCategory)
+    : allData;
 
   return (
     <section id="skills" className="py-16 px-6 max-w-7xl mx-auto">
@@ -74,23 +80,45 @@ export function SkillsBarChart({ skills, totalOffers, withTechnologies }: Props)
           label="didn't list any technologies and are excluded from this chart"
         />
 
-        <div className="flex flex-wrap gap-3 mt-6 mb-8">
-          {Array.from(new Set(data.map((d) => d.category))).slice(0, 10).map((cat) => (
-            <span
-              key={cat}
-              className="flex items-center gap-1.5 text-xs font-medium text-[var(--text-muted)]"
-            >
-              <span
-                className="w-2 h-2 rounded-full inline-block"
-                style={{ backgroundColor: CATEGORY_COLORS[cat] ?? "#9CA3AF" }}
-              />
-              {cat}
-            </span>
-          ))}
+        <div className="flex flex-wrap items-center gap-2 mt-6 mb-8">
+          <button
+            type="button"
+            onClick={() => setActiveCategory(null)}
+            className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
+              activeCategory === null
+                ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--primary)]"
+            }`}
+          >
+            All
+          </button>
+          {categories.map((cat) => {
+            const isActive = activeCategory === cat;
+            return (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setActiveCategory(isActive ? null : cat)}
+                aria-pressed={isActive}
+                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
+                  isActive
+                    ? "border-[var(--primary)] text-[var(--primary)]"
+                    : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--primary)]"
+                }`}
+              >
+                <span
+                  className="w-2 h-2 rounded-full inline-block"
+                  style={{ backgroundColor: CATEGORY_COLORS[cat] ?? "#9CA3AF" }}
+                />
+                {cat}
+              </button>
+            );
+          })}
         </div>
 
-        <ResponsiveContainer width="100%" height={520}>
+        <ResponsiveContainer width="100%" height={Math.max(160, data.length * 26)}>
           <BarChart
+            key={activeCategory ?? "all"}
             data={data}
             layout="vertical"
             margin={chartMargin}
