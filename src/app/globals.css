@@ -7,6 +7,8 @@
   --warning: #D97706;
   --danger: #DC2626;
   --surface: #FFFFFF;
+  --surface-muted: #FAFAFA;
+  --surface-alt: #F3F4F6;
   --text: #111827;
   --text-muted: #6B7280;
   --border: #E5E7EB;
@@ -46,4 +48,18 @@ body {
   background: var(--surface);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #8B5CF6;
+  color: #fff;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease both;
 }

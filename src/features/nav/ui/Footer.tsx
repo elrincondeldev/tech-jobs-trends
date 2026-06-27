@@ -16,6 +16,20 @@ const LinkedInIcon = () => (
   </svg>
 );
 
+const GitHubIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+  </svg>
+);
+
+const navLinks = [
+  { href: "/#overview", label: "Overview" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#roles", label: "Roles" },
+  { href: "/#salary", label: "Salary" },
+  { href: "/api-docs", label: "API Docs" },
+];
+
 export async function Footer() {
   noStore();
   const report = await getReport();
@@ -33,35 +47,61 @@ export async function Footer() {
     : null;
 
   return (
-    <footer className="border-t border-[var(--border)] mt-auto">
-      <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+    <footer className="border-t border-[var(--border)] mt-auto bg-[var(--surface-muted)]">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
 
         {/* Brand */}
         <div>
-          <p className="font-display font-semibold text-sm text-[var(--primary)] mb-1">
-            Tech Jobs Trends
+          <p className="font-display font-bold text-sm text-[var(--primary)] mb-2">
+            Tech Jobs <span className="text-[var(--secondary)]">Trends</span>
           </p>
-          <p className="text-xs text-[var(--text-muted)] leading-relaxed max-w-sm">
+          <p className="text-xs text-[var(--text-muted)] leading-relaxed max-w-xs">
             Market intelligence for the Spanish-speaking tech job market.
             Data aggregated from LATAM and Spain job boards.
           </p>
           {generatedAt && totalOffers && (
-            <p className="text-xs font-mono text-[var(--text-muted)] mt-3">
+            <p className="text-xs font-mono text-[var(--text-muted)] mt-4 flex items-center gap-1.5">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--secondary)]" />
               {totalOffers} offers · Updated {generatedAt}
             </p>
           )}
         </div>
 
-        {/* Author */}
-        <div className="flex flex-col items-start md:items-end gap-3">
+        {/* Navigation */}
+        <div>
+          <p className="text-xs font-mono uppercase tracking-widest text-[var(--text-muted)] mb-4">
+            Navigation
+          </p>
+          <ul className="space-y-2.5">
+            {navLinks.map((l) => (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  className="text-xs text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors"
+                >
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-          <div className="flex items-center gap-3">
+        {/* Author + Social */}
+        <div>
+          <p className="text-xs font-mono uppercase tracking-widest text-[var(--text-muted)] mb-4">
+            Author
+          </p>
+          <p className="text-xs text-[var(--text-muted)] mb-4">
+            Built by{" "}
+            <span className="font-semibold text-[var(--primary)]">El Rincón del Dev</span>
+          </p>
+          <div className="flex items-center gap-4">
             <a
               href="https://www.instagram.com/elrincondeldev/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors"
+              className="text-[var(--text-muted)] hover:text-[var(--secondary)] transition-colors"
             >
               <InstagramIcon />
             </a>
@@ -70,15 +110,20 @@ export async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors"
+              className="text-[var(--text-muted)] hover:text-[var(--secondary)] transition-colors"
             >
               <LinkedInIcon />
             </a>
+            <a
+              href="https://github.com/elrincondeldev/tech-jobs-trends"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-[var(--text-muted)] hover:text-[var(--secondary)] transition-colors"
+            >
+              <GitHubIcon />
+            </a>
           </div>
-          <p className="text-xs text-[var(--text-muted)]">
-            Developed by{" "}
-            <span className="font-semibold text-[var(--primary)]">El Rincón del Dev</span>
-          </p>
         </div>
       </div>
 

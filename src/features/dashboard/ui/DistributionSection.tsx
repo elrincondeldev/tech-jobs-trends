@@ -11,12 +11,25 @@ import { UnknownNote } from "@/shared/ui/UnknownNote";
 import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 const WORK_MODE_COLORS = ["#111111", "#8B5CF6", "#16A34A"];
-const LEVEL_COLORS = ["#111111", "#374151", "#6B7280", "#9CA3AF", "#D1D5DB"];
+const LEVEL_COLORS = ["#8B5CF6", "#7C3AED", "#6D28D9", "#5B21B6", "#4C1D95"];
 
 interface Props {
   workMode: DistributionEntry[];
   byLevel: DistributionEntry[];
   byCountry: DistributionEntry[];
+}
+
+function DonutCenterLabel({ cx, cy, total }: { cx: number; cy: number; total: number }) {
+  return (
+    <text x={cx} y={cy} textAnchor="middle" dominantBaseline="central">
+      <tspan x={cx} dy="-6" fontSize={18} fontWeight={700} fill="#111111" fontFamily="var(--font-montserrat)">
+        {total >= 1000 ? `${(total / 1000).toFixed(1)}k` : total}
+      </tspan>
+      <tspan x={cx} dy={20} fontSize={10} fill="#6B7280">
+        jobs
+      </tspan>
+    </text>
+  );
 }
 
 function DonutCard({
@@ -30,16 +43,17 @@ function DonutCard({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  const total = data.reduce((s, d) => s + d.value, 0);
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, scale: 0.96 }}
-      animate={inView ? { opacity: 1, scale: 1 } : {}}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
-      className="border border-border p-6"
+      className="border border-[var(--border)] p-6 bg-[var(--surface)]"
     >
-      <h3 className="font-display font-semibold text-base text-primary mb-4">{title}</h3>
+      <h3 className="font-display font-semibold text-base text-[var(--primary)] mb-4">{title}</h3>
       <ResponsiveContainer width="100%" height={180}>
         <PieChart>
           <Pie
@@ -54,13 +68,14 @@ function DonutCard({
             {data.map((_, i) => (
               <Cell key={i} fill={colors[i % colors.length]} />
             ))}
+            <DonutCenterLabel cx={0} cy={0} total={total} />
           </Pie>
           <Tooltip
             content={({ active, payload }) => {
               if (!active || !payload?.length) return null;
               const d = payload[0].payload;
               return (
-                <div className="bg-primary text-white px-3 py-2 text-xs font-mono">
+                <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono shadow-lg">
                   <p className="font-bold capitalize">{d.name}</p>
                   <p>{d.value.toLocaleString()} jobs · {d.pct}%</p>
                 </div>
@@ -71,13 +86,19 @@ function DonutCard({
       </ResponsiveContainer>
       <div className="mt-4 space-y-2">
         {data.map((d, i) => (
-          <div key={d.name} className="flex items-center justify-between text-xs">
+          <motion.div
+            key={d.name}
+            initial={{ opacity: 0, x: -8 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.3, delay: 0.3 + i * 0.07 }}
+            className="flex items-center justify-between text-xs"
+          >
             <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full" style={{ backgroundColor: colors[i % colors.length] }} />
-              <span className="capitalize text-muted">{d.name}</span>
+              <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: colors[i % colors.length] }} />
+              <span className="capitalize text-[var(--text-muted)]">{d.name}</span>
             </span>
-            <span className="font-mono text-primary">{d.pct}%</span>
-          </div>
+            <span className="font-mono text-[var(--primary)] font-semibold">{d.pct}%</span>
+          </motion.div>
         ))}
       </div>
     </motion.div>
@@ -109,13 +130,13 @@ export function DistributionSection({ workMode, byLevel, byCountry }: Props) {
 
   return (
     <section className="py-16 px-6 max-w-7xl mx-auto">
-      <p className="text-xs font-mono text-secondary uppercase tracking-widest mb-2">
+      <p className="text-xs font-mono text-[var(--secondary)] uppercase tracking-widest mb-2">
         Distribution
       </p>
-      <h2 className="font-display text-3xl font-bold text-primary mb-2">
+      <h2 className="font-display text-3xl font-bold text-[var(--primary)] mb-2">
         Market Breakdown
       </h2>
-      <p className="text-muted text-sm">
+      <p className="text-[var(--text-muted)] text-sm">
         Work mode, seniority level, and geographic distribution.
       </p>
       {levelUnknown && (
@@ -136,9 +157,9 @@ export function DistributionSection({ workMode, byLevel, byCountry }: Props) {
         initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="border border-border p-6"
+        className="border border-[var(--border)] p-6 bg-[var(--surface)]"
       >
-        <h3 className="font-display font-semibold text-base text-primary mb-1">
+        <h3 className="font-display font-semibold text-base text-[var(--primary)] mb-1">
           Jobs by Country
         </h3>
         {countryUnknown && (
@@ -175,14 +196,14 @@ export function DistributionSection({ workMode, byLevel, byCountry }: Props) {
                 if (!active || !payload?.length) return null;
                 const d = payload[0].payload;
                 return (
-                  <div className="bg-primary text-white px-3 py-2 text-xs font-mono">
+                  <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono shadow-lg">
                     <p className="font-bold">{d.name}</p>
                     <p>{d.jobs.toLocaleString()} jobs · {d.pct}%</p>
                   </div>
                 );
               }}
             />
-            <Bar dataKey="jobs" fill="#8B5CF6" radius={[0, 2, 2, 0]} maxBarSize={16} />
+            <Bar dataKey="jobs" fill="#8B5CF6" radius={[0, 3, 3, 0]} maxBarSize={16} />
           </BarChart>
         </ResponsiveContainer>
       </motion.div>

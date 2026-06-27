@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList, Cell,
 } from "recharts";
 import type { RoleEntry } from "@/entities/report/model/types";
 import { UnknownNote } from "@/shared/ui/UnknownNote";
@@ -11,6 +11,19 @@ import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 interface Props {
   roles: RoleEntry[];
+}
+
+const BAR_COLOR_START = "#111111";
+const BAR_COLOR_END = "#6B7280";
+
+function interpolateColor(start: string, end: string, t: number): string {
+  const h = (hex: string) => parseInt(hex.replace("#", ""), 16);
+  const sr = (h(start) >> 16) & 255, sg = (h(start) >> 8) & 255, sb = h(start) & 255;
+  const er = (h(end) >> 16) & 255, eg = (h(end) >> 8) & 255, eb = h(end) & 255;
+  const r = Math.round(sr + (er - sr) * t);
+  const g = Math.round(sg + (eg - sg) * t);
+  const b = Math.round(sb + (eb - sb) * t);
+  return `rgb(${r},${g},${b})`;
 }
 
 export function RolesChart({ roles }: Props) {
@@ -54,6 +67,20 @@ export function RolesChart({ roles }: Props) {
           />
         )}
 
+        <div className="mt-6 flex items-center gap-4">
+          <span className="text-xs font-mono text-[var(--text-muted)]">
+            Top {data.length} roles shown
+          </span>
+          {other && (
+            <>
+              <span className="h-3 w-px bg-[var(--border)]" />
+              <span className="text-xs font-mono text-[var(--text-muted)]">
+                {data.reduce((s, d) => s + d.jobs, 0).toLocaleString()} classified
+              </span>
+            </>
+          )}
+        </div>
+
         <div className="mt-6" />
         <ResponsiveContainer width="100%" height={460}>
           <BarChart
@@ -81,14 +108,20 @@ export function RolesChart({ roles }: Props) {
                 if (!active || !payload?.length) return null;
                 const d = payload[0].payload;
                 return (
-                  <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono">
-                    <p className="font-bold mb-0.5 capitalize">{d.name}</p>
+                  <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono shadow-lg">
+                    <p className="font-bold capitalize mb-0.5">{d.name}</p>
                     <p>{d.jobs.toLocaleString()} jobs · {d.pct}%</p>
                   </div>
                 );
               }}
             />
-            <Bar dataKey="jobs" fill="#111111" radius={[0, 2, 2, 0]} maxBarSize={18}>
+            <Bar dataKey="jobs" radius={[0, 3, 3, 0]} maxBarSize={18}>
+              {data.map((_, i) => (
+                <Cell
+                  key={i}
+                  fill={interpolateColor(BAR_COLOR_START, BAR_COLOR_END, i / Math.max(data.length - 1, 1))}
+                />
+              ))}
               <LabelList
                 dataKey="jobs"
                 position="right"

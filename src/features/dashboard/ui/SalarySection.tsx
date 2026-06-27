@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect, useRef } from "react";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList,
 } from "recharts";
@@ -19,6 +19,21 @@ interface Props {
 
 function fmt(n: number) {
   return n >= 1000 ? `$${(n / 1000).toFixed(0)}k` : `$${n}`;
+}
+
+function AnimatedSalary({ value }: { value: number }) {
+  const motionVal = useMotionValue(0);
+  const display = useTransform(motionVal, (v) => fmt(Math.round(v)));
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!inView) return;
+    const controls = animate(motionVal, value, { duration: 1.2, ease: "easeOut" });
+    return controls.stop;
+  }, [inView, motionVal, value]);
+
+  return <motion.span ref={ref}>{display}</motion.span>;
 }
 
 export function SalarySection({ global: globalStats, byRole, totalOffers, withSalary }: Props) {
@@ -39,6 +54,29 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
     .slice(0, 15)
     .map((r) => ({ name: r.role, median: r.median, mean: r.mean, n: r.n }));
 
+  const salaryStats = [
+    {
+      label: "Global Median",
+      value: globalStats.median,
+      info: "The middle salary when all offers are sorted. Half of offers pay more than this, half pay less. More robust than the mean against extreme values.",
+    },
+    {
+      label: "Global Mean",
+      value: globalStats.mean,
+      info: "The arithmetic average of all salaries. Can be pulled upward by a small number of very high-paying offers, so it's often higher than the median.",
+    },
+    {
+      label: "25th Percentile",
+      value: globalStats.p25,
+      info: "Also called P25 or Q1. 25% of offers in the dataset pay less than this amount. A useful lower-bound reference for entry-level or lower-paying roles.",
+    },
+    {
+      label: "75th Percentile",
+      value: globalStats.p75,
+      info: "Also called P75 or Q3. 75% of offers pay less than this amount — only the top 25% pay more. A useful upper-bound for senior or specialized positions.",
+    },
+  ];
+
   return (
     <section id="salary" className="py-16 px-6 max-w-7xl mx-auto">
       <p className="text-xs font-mono text-[var(--secondary)] uppercase tracking-widest mb-2">
@@ -56,47 +94,41 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
         label="didn't include salary information and are excluded from these charts"
       />
 
-      <div className="mt-6 border-l-2 border-[var(--warning)] bg-[#FFFBEB] px-5 py-4">
-        <p className="text-xs font-semibold text-[#92400E] mb-1">Why do some salaries look high?</p>
-        <p className="text-xs text-[#92400E] leading-relaxed">
-          This dataset aggregates job postings from the Spanish-speaking market — primarily LATAM and Spain —
-          but many of the companies behind these offers operate out of the US or other high-income markets
-          and publish remote-friendly positions that are technically open to the region.
-          Those roles carry US-range salaries, which pull the global mean and upper percentiles significantly upward.
-          Filter by country to get a more accurate picture of local compensation levels.
-        </p>
+      <div className="mt-6 flex items-start gap-3 border border-[#FDE68A] bg-[#FFFBEB] px-5 py-4">
+        <svg className="mt-0.5 shrink-0 text-[#D97706]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+          <line x1="12" y1="9" x2="12" y2="13" />
+          <line x1="12" y1="17" x2="12.01" y2="17" />
+        </svg>
+        <div>
+          <p className="text-xs font-semibold text-[#92400E] mb-1">Why do some salaries look high?</p>
+          <p className="text-xs text-[#92400E] leading-relaxed">
+            This dataset aggregates job postings from the Spanish-speaking market — primarily LATAM and Spain —
+            but many companies operate out of the US or other high-income markets and publish remote-friendly positions open to the region.
+            Those roles carry US-range salaries, which pull the mean and upper percentiles significantly upward.
+          </p>
+        </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--border)] mt-8 mb-12">
-        {[
-          {
-            label: "Global Median",
-            value: fmt(globalStats.median),
-            info: "The middle salary when all offers are sorted. Half of offers pay more than this, half pay less. More robust than the mean against extreme values.",
-          },
-          {
-            label: "Global Mean",
-            value: fmt(globalStats.mean),
-            info: "The arithmetic average of all salaries. Can be pulled upward by a small number of very high-paying offers, so it's often higher than the median.",
-          },
-          {
-            label: "25th Percentile",
-            value: fmt(globalStats.p25),
-            info: "Also called P25 or Q1. 25% of offers in the dataset pay less than this amount. A useful lower-bound reference for entry-level or lower-paying roles.",
-          },
-          {
-            label: "75th Percentile",
-            value: fmt(globalStats.p75),
-            info: "Also called P75 or Q3. 75% of offers pay less than this amount — only the top 25% pay more. A useful upper-bound for senior or specialized positions.",
-          },
-        ].map((s) => (
-          <div key={s.label} className="bg-[var(--surface)] px-6 py-6">
-            <div className="text-2xl font-display font-bold text-[var(--primary)] mb-2">{s.value}</div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 mb-12">
+        {salaryStats.map((s, i) => (
+          <motion.div
+            key={s.label}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.08 * i }}
+            whileHover={{ y: -3, transition: { duration: 0.15 } }}
+            className="bg-[var(--surface)] border border-[var(--border)] px-6 py-6 cursor-default"
+          >
+            <div className="text-2xl font-display font-bold text-[var(--warning)] mb-2">
+              <AnimatedSalary value={s.value} />
+            </div>
             <div className="flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
               {s.label}
               <InfoTooltip text={s.info} />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
@@ -137,7 +169,7 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
                 if (!active || !payload?.length) return null;
                 const d = payload[0].payload;
                 return (
-                  <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono">
+                  <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono shadow-lg">
                     <p className="font-bold capitalize mb-1">{d.name}</p>
                     <p>Median: {fmt(d.median)}</p>
                     <p>Mean: {fmt(d.mean)}</p>
@@ -146,7 +178,7 @@ export function SalarySection({ global: globalStats, byRole, totalOffers, withSa
                 );
               }}
             />
-            <Bar dataKey="median" fill="#D97706" radius={[0, 2, 2, 0]} maxBarSize={18}>
+            <Bar dataKey="median" fill="#D97706" radius={[0, 3, 3, 0]} maxBarSize={18}>
               <LabelList
                 dataKey="median"
                 position="right"

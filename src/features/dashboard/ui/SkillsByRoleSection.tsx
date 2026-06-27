@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from "recharts";
 import type { RoleSkillData } from "@/entities/report/model/types";
 import { useIsMobile } from "@/shared/lib/useIsMobile";
@@ -16,6 +16,11 @@ const FEATURED_ROLES = [
   "backend", "frontend", "full stack", "devops", "data engineer",
   "machine learning engineer", "ai engineer", "data scientist", "data analyst",
   "software engineer", "mobile",
+];
+
+const BAR_COLORS = [
+  "#8B5CF6", "#7C3AED", "#6D28D9", "#5B21B6", "#4C1D95",
+  "#8B5CF6", "#7C3AED", "#6D28D9", "#5B21B6", "#4C1D95",
 ];
 
 export function SkillsByRoleSection({ byRole }: Props) {
@@ -53,12 +58,19 @@ export function SkillsByRoleSection({ byRole }: Props) {
           <button
             key={role}
             onClick={() => setActive(role)}
-            className={`px-3 py-1.5 text-xs font-medium capitalize cursor-pointer transition-colors border ${
+            className={`relative px-3 py-1.5 text-xs font-medium capitalize cursor-pointer transition-colors duration-150 border ${
               active === role
-                ? "bg-[var(--primary)] text-white border-[var(--primary)]"
-                : "bg-transparent text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]"
+                ? "border-[var(--secondary)] text-[var(--secondary)]"
+                : "bg-transparent text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--secondary)] hover:text-[var(--secondary)]"
             }`}
           >
+            {active === role && (
+              <motion.span
+                layoutId="role-pill-bg"
+                className="absolute inset-0 bg-[var(--secondary)] opacity-10"
+                transition={{ type: "spring", bounce: 0.2, duration: 0.4 }}
+              />
+            )}
             {role}
           </button>
         ))}
@@ -67,19 +79,25 @@ export function SkillsByRoleSection({ byRole }: Props) {
       <AnimatePresence mode="wait">
         <motion.div
           key={active}
-          initial={{ opacity: 0, x: 12 }}
+          initial={{ opacity: 0, x: 16 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -12 }}
-          transition={{ duration: 0.25 }}
-          className="border border-[var(--border)] p-6"
+          exit={{ opacity: 0, x: -16 }}
+          transition={{ duration: 0.22, ease: "easeOut" }}
+          className="border border-[var(--border)] p-6 bg-[var(--surface)]"
         >
           <div className="flex items-baseline justify-between mb-6">
             <h3 className="font-display font-semibold text-base text-[var(--primary)] capitalize">
               {active}
             </h3>
-            <span className="text-xs font-mono text-[var(--text-muted)]">
-              {roleData?.total_jobs.toLocaleString()} total jobs
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-mono text-[var(--text-muted)]">
+                {roleData?.total_jobs.toLocaleString()} total jobs
+              </span>
+              <span className="h-4 w-px bg-[var(--border)]" />
+              <span className="text-xs font-mono text-[var(--secondary)]">
+                Top {chartData.length} skills
+              </span>
+            </div>
           </div>
 
           <ResponsiveContainer width="100%" height={340}>
@@ -109,14 +127,18 @@ export function SkillsByRoleSection({ byRole }: Props) {
                   if (!a || !payload?.length) return null;
                   const d = payload[0].payload;
                   return (
-                    <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono">
+                    <div className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-mono shadow-lg">
                       <p className="font-bold mb-0.5">{d.fullName}</p>
                       <p>{d.jobs.toLocaleString()} jobs · {d.pct}%</p>
                     </div>
                   );
                 }}
               />
-              <Bar dataKey="pct" fill="#8B5CF6" radius={[0, 2, 2, 0]} maxBarSize={20} />
+              <Bar dataKey="pct" radius={[0, 3, 3, 0]} maxBarSize={20}>
+                {chartData.map((_, i) => (
+                  <Cell key={i} fill={BAR_COLORS[i % BAR_COLORS.length]} />
+                ))}
+              </Bar>
             </BarChart>
           </ResponsiveContainer>
         </motion.div>
